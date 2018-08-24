@@ -1,0 +1,450 @@
+
+.param_search_frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.search_bg {
+    position: absolute;
+    width: 1200px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    margin: -310px 0 0 -703px;
+    background: #ffffff;
+
+    background: url('/assets/images/apartments__selection/background.svg') no-repeat;
+    width: 1407px;
+    height: 612px;
+
+}
+.search_legend {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    margin: 212px 0 0 -500px;
+    font-size: 15px;
+    font-family: 'PFDinTextCondProRegular', Arial, sans-serif;
+    white-space: nowrap;
+    color: #84949d;
+}
+.search_legend p {
+    margin: 2px 0;
+}
+.search_legend strong {
+    font-family: 'PFDinTextCondProBold', Arial, sans-serif;
+}
+.search_left, .search_right {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.search_left {
+    width: 320px;
+    margin: -153px 0 0 -550px;
+}
+.search_right {
+    width: 650px;
+    margin: -270px 0 0 -100px;
+
+    h2
+    {
+        color: #fff;
+        text-align: center;
+        font-size: 28px;
+        line-height: 28px;
+        font-weight: normal;
+        text-transform: lowercase;
+        margin-bottom: 30px;
+    }
+}
+.search_logo {
+    position: absolute;
+    width: 142px;
+    height: 56px;
+    top: 40px;
+    left: 50px;
+    background: url('../i/sprite.png') -128px -248px;
+}
+.search_slider {
+    position: relative;
+    height: 5px;
+    left: 0;
+    right: 0;
+    margin-bottom: 15px;
+}
+.search_slider {
+    margin-top: 90px;
+}
+
+.search_slider:first-child {
+    margin-top: 40px;
+}
+
+.search_slider_line, .search_slider_mask {
+    position: absolute;
+    left: 1px;
+    right: 1px;
+    height: 4px;
+    top: 0;
+    background: #E9F5FA;
+    border-radius: 15px;
+}
+.search_slider_mask {
+    background:@color-green;
+}
+.search_slider_polz {
+    position: absolute;
+    width: 32px;
+    height: 21px;
+    top: -5px;
+    left: 0;
+    //cursor: url('../i/cur1.cur'), move;
+}
+.search_slider_polz:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    left: 0;
+    margin: -9px 0 0 0;
+    background: #fff;
+    .border-radius(50%);
+    //background: url('../i/sprite.png') -80px -105px;
+}
+.search_slider_polz:hover:after {
+    background-position: -104px -105px;
+}
+.search_slider_polz.right:after {
+    left: auto;
+    right: 0;
+}
+
+.search_slider_txt {
+    position: absolute;
+    width: 30px;
+    height: 37px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+    top: -40px;
+    left: 50%;
+    margin-left: -3px;
+    z-index: 1;
+    background-color: #009FE3;
+    padding-top: 7px;
+
+    background: url('/assets/images/apartments__selection/range__point.svg') no-repeat ;
+}
+
+.search_slider_txt:after {
+
+    margin-left: -0px;
+    /*content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: 42px;
+    left: 50%;
+    margin-left: -6px;
+    border: 6px solid transparent;
+    border-top-color: #009FE3;*/
+}
+
+.search_slider_txt.left {
+    margin-left: -26px;
+}
+
+.search_slider_txt .is_studio, .search_slider_limit_left .is_studio, .search_slider_limit_right .is_studio {
+    font-size: 14px;
+}
+
+.search_slider_limit_left, .search_slider_limit_right {
+    z-index: 0;
+    cursor: default;
+    background: url('../i/sprite.png') -2px -789px;
+    background: #fff;
+    color: #5BC7FF;
+}
+
+.search_slider_limit_right {
+    right: 0;
+    left: auto !important;
+}
+
+.search_slider_name {
+    position: absolute;
+    text-align: left;
+    font-size: 16px;
+    line-height: 16px;
+    top: 50%;
+    color: #fff;
+    left: 0;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 20px;
+    text-transform: lowercase;
+}
+.search_results tr.r_notfound td {
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+}
+.search_results {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar-track
+    {
+        background-color: none;
+    }
+
+    &::-webkit-scrollbar
+    {
+        width:3px;
+        background-color: #E4E5E6;
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+        background-color: @color-green;
+    }
+
+    &::-moz-scrollbar
+    {
+        width: 10px;
+        background-color: none;
+    }
+
+    &::-moz-scrollbar-track
+    {
+        background-color: none;
+    }
+
+    &::-moz-scrollbar-thumb
+    {
+        background-color: #24ab00;
+    }
+}
+
+.search_result_div, .search_preloader {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.search_header_tab {
+    position: absolute;
+    width: 650px;
+    top: 0;
+    left: 23px;
+    left: 0;
+}
+
+.search_header_tab tr {
+    border-bottom: 2px solid #007BB0;
+}
+
+.search_header_tab td {
+    cursor: pointer;
+    color: #fff!important;
+}
+
+.search_result_tab tr {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.search_result_tab tr:hover {
+    background-color: #C24E3A;
+}
+
+.search_result_tab tr:hover td {
+    color: #ffffff;
+}
+
+.search_bg td {
+    position: relative;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    /*width: 80px;*/
+    width: 108px;
+    font-size: 18px;
+    color: #fff;
+}
+.search_result_tab {
+    display: block;
+    width: 650px;
+    //margin-left: 23px;
+    color: #fff;
+}
+.search_result_div {
+    top: 53px;
+    bottom: 0;
+}
+.search_bg td.r_sq {
+    /*width: 115px;*/
+    width: 124px;
+}
+
+.search_bg td.r_tc {
+    width: 165px;
+}
+
+.search_header_tab td {
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 13px;
+    font-size: 20px;
+    //text-transform: uppercase;
+}
+.search_header_tab td i {
+    display: inline-block;
+    background: none;
+    width: 12px;
+    height: 11px;
+    margin: 0 0 0 8px;
+    vertical-align: bottom;
+}
+.search_header_tab td.active i {
+    //background: url('../i/sprite.png') -94px -92px;
+}
+.search_header_tab td.active2 i {
+    //background: url('../i/sprite.png') -80px -92px;
+}
+
+.search_result_tab tr.odd {
+    background: rgba(0, 0, 0, 0.34);
+}
+.search_result_tab tr:hover {
+    background: @color-green;
+    color: #fff;
+}
+.search_result_tab tr.r_notfound {
+    cursor: default;
+    background: none;
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+
+    td
+    {
+        width: 100%!important;
+        text-align: center;
+    }
+}
+.search_result_num {
+    position: relative;
+    margin-top: 20px;
+    color: #fff;
+    text-align: left;
+}
+.search_preloader {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.search_preloader_circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background: url('/assets/images/preloader__ring.svg');
+    margin: -20px 0 0 -20px;
+}
+.search_pagination_frame {
+    position: relative;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.search_pagination {
+    position: relative;
+    float: left;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    background: #dedede;
+}
+.search_pagination.active, .search_buttons.active {
+    background: #ffae00;
+    color: #fff;
+}
+.search_pagination+.search_pagination {
+    margin-left: 5px;
+}
+.search_buttons_frame {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.search_buttons {
+    float: left;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 22px;
+    background: #dedede;
+    cursor: pointer;
+}
+.search_buttons+.search_buttons {
+    margin-left: 5px;
+}
+
+.param_search_close {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: -56px;
+    right: 0;
+    cursor: pointer;
+    background-color: #009FE3;
+}
+
+.param_search_close:after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin: -8px 0 0 -8px;
+    cursor: pointer;
+    background: url('../i/sprite.png') -70px -2px;
+}
+
+.table_header {
+    display: inline-block;
+    height: 66px;
+    margin-left: 17px;
+    vertical-align: bottom;
+    background: url('../i/sprite.png');
+}
+
+
+.search_result_div .jspVerticalBar {
+    right: -10px;
+}

@@ -1,0 +1,580 @@
+/* Формируем контейнер отрицательного отступа от родителя. */
+.row
+{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Конфигурируем все дочерние контейнеры.  */
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-2-4, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
+{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+/* Формируем контейнеры для устройств наименьшим разрешением экрана. */
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-2-4, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9
+{
+    float: left;
+}
+
+.col-xs-12
+{
+    width: 100%;
+}
+
+.col-xs-11
+{
+    width: 91.66666667%;
+}
+
+.col-xs-10
+{
+    width: 83.33333333%;
+}
+
+.col-xs-9
+{
+    width: 75%;
+}
+
+.col-xs-8
+{
+    width: 66.66666667%;
+}
+
+.col-xs-7
+{
+    width: 58.33333333%;
+}
+
+.col-xs-6
+{
+    width: 50%;
+}
+
+.col-xs-5
+{
+    width: 41.66666667%;
+}
+
+.col-xs-4
+{
+    width: 33.33333333%;
+}
+
+.col-xs-3
+{
+    width: 25%;
+}
+
+.col-xs-2-4
+{
+    width: 20%;
+}
+
+.col-xs-2
+{
+    width: 16.66666667%;
+}
+
+.col-xs-1
+{
+    width: 8.33333333%;
+}
+
+/* Формируем контейнеры для устройств с малым разрешением экрана (Tablet PC). */
+@media (min-width: 768px)
+{
+    .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-2-4, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9
+    {
+        float: left
+    }
+
+    .col-sm-12
+    {
+        width: 100%
+    }
+
+    .col-sm-11
+    {
+        width: 91.66666667%
+    }
+
+    .col-sm-10
+    {
+        width: 83.33333333%
+    }
+
+    .col-sm-9
+    {
+        width: 75%
+    }
+
+    .col-sm-8
+    {
+        width: 66.66666667%
+    }
+
+    .col-sm-7
+    {
+        width: 58.33333333%
+    }
+
+    .col-sm-6
+    {
+        width: 50%
+    }
+
+    .col-sm-5
+    {
+        width: 41.66666667%
+    }
+
+    .col-sm-4
+    {
+        width: 33.33333333%
+    }
+
+    .col-sm-3
+    {
+        width: 25%
+    }
+
+    .col-sm-2-4
+    {
+        width: 20%;
+    }
+
+    .col-sm-2
+    {
+        width: 16.66666667%
+    }
+
+    .col-sm-1
+    {
+        width: 8.33333333%
+    }
+}
+
+/* Формируем контейнеры для устройств со среднем разрешением экрана (Medium Desktop). */
+@media (min-width: 992px)
+{
+    .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9
+    {
+        float: left
+    }
+
+    .col-md-12
+    {
+        width: 100%
+    }
+
+    .col-md-11
+    {
+        width: 91.66666667%
+    }
+
+    .col-md-10
+    {
+        width: 83.33333333%
+    }
+
+    .col-md-9
+    {
+        width: 75%
+    }
+
+    .col-md-8
+    {
+        width: 66.66666667%
+    }
+
+    .col-md-7
+    {
+        width: 58.33333333%
+    }
+
+    .col-md-6
+    {
+        width: 50%
+    }
+
+    .col-md-5
+    {
+        width: 41.66666667%
+    }
+
+    .col-md-4
+    {
+        width: 33.33333333%
+    }
+
+    .col-md-3
+    {
+        width: 25%
+    }
+
+    .col-md-2
+    {
+        width: 16.66666667%
+    }
+
+    .col-md-1
+    {
+        width: 8.33333333%
+    }
+}
+
+/* Формируем контейнеры для устройств с максимально большим разрешением экрана (Large Desktop). */
+@media (min-width: 1200px)
+{
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9
+    {
+        float: left
+    }
+
+    .col-lg-12
+    {
+        width: 100%
+    }
+
+    .col-lg-11
+    {
+        width: 91.66666667%
+    }
+
+    .col-lg-10
+    {
+        width: 83.33333333%
+    }
+
+    .col-lg-9
+    {
+        width: 75%
+    }
+
+    .col-lg-8
+    {
+        width: 66.66666667%
+    }
+
+    .col-lg-7
+    {
+        width: 58.33333333%
+    }
+
+    .col-lg-6
+    {
+        width: 50%
+    }
+
+    .col-lg-5
+    {
+        width: 41.66666667%
+    }
+
+    .col-lg-4
+    {
+        width: 33.33333333%
+    }
+
+    .col-lg-3
+    {
+        width: 25%
+    }
+
+    .col-lg-2
+    {
+        width: 16.66666667%
+    }
+
+    .col-lg-1
+    {
+        width: 8.33333333%
+    }
+}
+
+/* Свойство запрета полного обтекания текста. */
+.clearfix:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix
+{
+    display: inline-block;
+}
+
+* html .clearfix
+{
+    height: 1%;
+}
+
+.clearfix
+{
+    display: block;
+}
+
+.hr-gray
+{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(204,204,204, 0), rgba(204,204,204, 0.75), rgba(204,204,204, 0));
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.hr-gray-left
+{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(204,204,204, 0.35), rgba(204,204,204, 0.35), rgba(204,204,204, 0));
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.hr-black
+{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/*
+ * CSS Styles that are needed by jScrollPane for it to operate correctly.
+ *
+ * Include this stylesheet in your site or copy and paste the styles below into your stylesheet - jScrollPane
+ * may not operate correctly without them.
+ */
+
+.jspContainer
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.jspPane
+{
+    position: absolute;
+}
+
+.jspVerticalBar
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 16px;
+    height: 100%;
+    background: red;
+}
+
+.jspHorizontalBar
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    background: red;
+}
+
+.jspCap
+{
+    display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+    float: left;
+}
+
+.jspTrack
+{
+    background: #dde;
+    position: relative;
+}
+
+.jspDrag
+{
+    background: #bbd;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+    float: left;
+    height: 100%;
+}
+
+.jspArrow
+{
+    background: #50506d;
+    text-indent: -20000px;
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+.jspArrow.jspDisabled
+{
+    cursor: default;
+    background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+    height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+    width: 16px;
+    float: left;
+    height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+    outline: none;
+}
+
+.jspCorner
+{
+    background: #eeeef4;
+    float: left;
+    height: 100%;
+}
+
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner
+{
+    margin: 0 -3px 0 0;
+}
+
+
+
+
+table.table-control a:link {
+    color: #666;
+    //font-weight: bold;
+    text-decoration: none;
+    color: #bd5a35;
+    text-decoration: underline;
+}
+
+table.table-control a:visited {
+    color: #999999;
+    //font-weight: bold;
+    text-decoration: none;
+
+    color: #bd5a35;
+    text-decoration: underline;
+}
+
+table.table-control a:active,
+table.table-control a.active,
+table.table-control a:hover {
+    color: #bd5a35;
+    text-decoration: underline;
+}
+
+table.table-control {
+
+}
+
+table.table-control th {
+    padding: 10px;
+    border-top: 1px solid #fafafa;
+    border-bottom: 1px solid #e0e0e0;
+    text-transform: uppercase;
+    font-size: 11px;
+    background: #ededed;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+    background: -moz-linear-gradient(top, #ededed, #ebebeb);
+    color: #333;
+}
+
+table.table-control th:first-child {
+    text-align: left;
+    padding-left: 20px;
+}
+
+table.table-control tr:first-child th:first-child {
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+table.table-control tr:first-child th:last-child {
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+table.table-control tr {
+    text-align: left;
+    padding-left: 20px;
+}
+
+table.table-control td:first-child {
+    text-align: left;
+    padding-left: 20px;
+    border-left: 0;
+}
+
+table.table-control td {
+    padding: 10px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+    vertical-align: top;
+    color: #333;
+    background: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+    background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+}
+
+table.table-control tr.even td {
+    background: #f6f6f6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+    background: -moz-linear-gradient(top, #f8f8f8, #f6f6f6);
+}
+
+table.table-control tr:last-child td {
+    border-bottom: 0;
+}
+
+table.table-control tr:last-child td:first-child {
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+table.table-control tr:last-child td:last-child {
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+table.table-control tr:hover td {
+    background: #f2f2f2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+    background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
+}
+
+
+

@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "/www/glumilino.ru/webstat"
+AuthUserFile /var/www/aksenov/data/etc/767042.passwd
+DirectoryIndex index.html
+<Limit GET POST>
+	require valid-user
+</Limit>

@@ -1,0 +1,46 @@
+<div class="title__block">Редактирование информации</div>
+<div class="hr-gray-left"></div>
+
+[[$error]]
+<div class="row clearfix">
+    <div class="col-xs-12">
+        <form action="[[$section__url]]&op=save" method="post" class="styling__form" enctype="multipart/form-data">
+            <input type="hidden" name="is__posting" value="true">
+            <table class="table-control" width="100%">
+                <thead>
+                <th width="300">
+
+                </th>
+                <th>
+                </th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Номер телефона:</td>
+                    <td><input type="text" name="phone" value="[[$phone]]" placeholder="246 70 70"></td>
+                </tr>
+                <tr>
+                    <td>Электронный адрес для заявок:</td>
+                    <td><input type="text" name="email" value="[[$email]]" placeholder="email@domain.ru"></td>
+                </tr>
+                <tr>
+                    <td>Описание сайта (SEO):</td>
+                    <td><textarea placeholder="Описание сайта (SEO)" name="description">[[$description]]</textarea></td>
+                </tr>
+                <tr>
+                    <td>Ключевые слова (SEO):</td>
+                    <td><textarea placeholder="Ключевые слова (SEO)" name="keywords">[[$keywords]]</textarea></td>
+                </tr>
+                <tr>
+                    <td>Коды счётчиков:</td>
+                    <td><textarea placeholder="Коды счётчиков" name="code">[[$code]]</textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Обновить информацию</button></td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>

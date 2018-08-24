@@ -1,0 +1,55 @@
+<div class="title__block">
+    Редактирование информации о квартире
+    <a href="[[$plugin-url]]&section=apartments__page" class="back">
+        Вернуться к списку квартир
+    </a>
+</div>
+
+<div class="hr-gray-left"></div>
+<div class="notif error">
+    Вы можете посмотреть данную квартиру на сайте, для этого <a href="/квартира/[[$apartment__number]]/" target="_blank">нажмите здесь</a>.
+</div>
+
+[[$error]]
+<div class="row clearfix">
+    <div class="col-xs-5">
+        <div style="text-align: center; border: 1px solid #ccc;">
+            <img src="[[$plan]]" class="round" width="30%">
+        </div>
+    </div>
+
+    <div class="col-xs-7">
+        <form action="[[$plugin-url]]&section=apartments__page&action=edit&id=[[$id]]&op=update__info" method="post" class="styling__form" enctype="multipart/form-data">
+            <input type="hidden" name="is__posting" value="true">
+
+            <div class="group-input">
+                <div class="input-name">Номер этажа: </div>
+                <input type="text" name="storey" placeholder="Этаж" value="[[$storey]]">
+            </div>
+            <div class="group-input">
+                <div class="input-name">Номер квартиры: </div>
+                <input type="text" name="apartment__number" placeholder="Номер квартиры" value="[[$apartment__number]]">
+            </div>
+            <div class="group-input">
+                <div class="input-name">Количество комнат: </div>
+                <input type="text" name="rooms" placeholder="Количество комнат" value="[[$rooms]]">
+            </div>
+            <div class="group-input">
+                <div class="input-name">Площадь квартиры: </div>
+                <input type="text" name="area" placeholder="Площадь квартиры" value="[[$area]]">
+            </div>
+            <div class="group-input">
+                <div class="input-name">Цена квартиры: </div>
+                <input type="text" name="price" placeholder="Цена квартиры" value="[[$price]]">
+            </div>
+
+            <div class="radio__group">
+                <label><input type="radio" name="active" value="1" [[$check__active]]> Доступна для бронирования</label>
+                <label><input type="radio" name="active" value="0" [[$check__no__active]]> Недоступна для бронирования</label>
+            </div>
+
+            <button type="submit" onclick="return confirm('Вы действительно ходите обновить информацию о квартире?');">Обновить информацию</button>
+            <a href="[[$plugin-url]]&section=apartments__page" class="submit">Вернуться назад</a>
+        </form>
+    </div>
+</div>

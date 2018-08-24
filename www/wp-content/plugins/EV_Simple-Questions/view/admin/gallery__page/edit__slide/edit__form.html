@@ -1,0 +1,39 @@
+<div class="title__block">
+    Редактирование изображений на странице белой отделки
+    <a href="[[$plugin-url]]&section=gallery__page" class="back">
+        Вернуться к списку изображений
+    </a>
+</div>
+
+<div class="hr-gray-left"></div>
+<div class="notif error">
+    К загрузке изображений в галерею допускаются форматы JPEG или PNG.
+</div>
+
+[[$error]]
+<div class="row clearfix">
+    <div class="col-xs-7">
+        <form action="[[$plugin-url]]&section=gallery__page&action=edit__slide&id=[[$id]]&op=update__slide" method="post" class="styling__form" enctype="multipart/form-data">
+            <input type="hidden" name="is__posting" value="true">
+          <!--   <textarea placeholder="Текст на изображении" name="slide__title" style="height: 100px;">[[$title]]</textarea>
+            <textarea placeholder="Текст под изображением" name="slide__description">[[$description]]</textarea> -->
+            <div>
+                <div class="file_upload">
+                    <button type="button">Обновить</button>
+                    <div>Изображение</div>
+                    <input type="file" name="slide__image">
+                </div>
+            </div>
+
+            <button type="submit">Обновить</button>
+            <a href="[[$plugin-url]]&section=gallery__page&action=delete__slide&id=[[$id]]" class="submit" onclick="return confirm('Вы действительно ходите удалить изображение?');">Удалить изображение</a>
+            <a href="[[$plugin-url]]&section=gallery__page" class="submit">К списку изображений</a>
+        </form>
+    </div>
+
+    <div class="col-xs-5">
+        <div>
+            <img src="[[$image]]" class="round" width="100%">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,91 @@
+div#address__page
+{
+    div.description__frame
+    {
+        background: url('/assets/images/address__page/overlay.svg') no-repeat;
+        width: 600px;
+        height: 484px;
+        position: absolute;
+        z-index: 2;
+        right: 150px;
+        top: 180px;
+        padding: 40px;
+
+        a.close
+        {
+            background: url('/assets/images/icon__close.svg') no-repeat;
+            width: 43px;
+            height: 45px;
+            position: absolute;
+            display: block;
+            right: 60px;
+            top: 20px;
+            z-index: 20;
+        }
+
+        div.scroll__container {
+            padding: 0px;
+            width: 400px;
+            margin: 0 auto;
+            height: 400px;
+            overflow-y: scroll;
+            //padding-right: 20px;
+            font-family: @font__PTSans;
+            position: relative;
+
+            &::-webkit-scrollbar-track {
+                background-color: none;
+                display: none;
+            }
+
+            &::-webkit-scrollbar {
+                width: 3px;
+                background-color: #E4E5E6;
+                display: none;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: @color-green;
+                display: none;
+            }
+
+            &::-moz-scrollbar {
+                width: 10px;
+                background-color: none;
+                display: none;
+            }
+
+            &::-moz-scrollbar-track {
+                background-color: none;
+                display: none;
+            }
+
+            &::-moz-scrollbar-thumb {
+                background-color: #24ab00;
+                display: none;
+            }
+
+            div.large__title {
+                font-size: 38px;
+                color: #E3E3E3;
+                text-align: center;
+                font-family: @font__PRSerif;
+            }
+
+            div.content {
+                font-size: 20px;
+                line-height: 25px;
+                margin: 0 auto;
+                margin-top: 20px;
+                color: #fff;
+                color: #E3E3E3;
+            }
+        }
+    }
+
+    .legend__frame
+    {
+        position:absolute; z-index: 2; opacity: 0; width: 600px; height: auto; right: 200px;
+        bottom: -100px;
+    }
+}

@@ -1,0 +1,13 @@
+div#developer__page div.developer__window {
+  display: table;
+}
+div#developer__page div.developer__window div.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+div#developer__page div.developer__window div.middle div.window {
+  width: 1270px;
+  height: 584px;
+  background: url('/assets/images/developer__page/overlay.svg') no-repeat;
+  margin: 0 auto;
+}

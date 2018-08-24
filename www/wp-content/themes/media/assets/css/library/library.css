@@ -1,0 +1,2014 @@
+@charset "UTF-8";
+/* Система сеточного типа (Grid system). */
+.container,
+.container-fluid,
+.container-flow {
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Формируем базовый контейнер. */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (max-height: 500px) {
+  .container {
+    width: 90%;
+  }
+}
+/* Формируем контейнер, от разрешения 768px. */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Формируем контейнер, от разрешения 992px. */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Формируем контейнер, от разрешения 1200px. */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* Формируем базовый контейнер. */
+.container-flow {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* Формируем контейнер, от разрешения 768px. */
+@media (min-width: 769px) {
+  .container-flow {
+    width: 100%;
+  }
+}
+/* Формируем контейнер, от разрешения 992px. */
+@media (min-width: 992px) {
+  .container-flow {
+    width: 100%;
+  }
+}
+/* Формируем контейнер, от разрешения 1200px. */
+@media (min-width: 1200px) {
+  .container-flow {
+    width: 90%;
+  }
+}
+@media (min-width: 1600px) {
+  .container-flow {
+    width: 85%;
+  }
+}
+/* Формируем контейнер отрицательного отступа от родителя. */
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+/* Конфигурируем все дочерние контейнеры.  */
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-md-1,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-sm-1,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-sm-2,
+.col-sm-2-4,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* Формируем контейнеры для устройств наименьшим разрешением экрана. */
+.col-xs-1,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-xs-2,
+.col-xs-2-4,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9 {
+  float: left;
+}
+.col-xs-12 {
+  width: 100%;
+}
+.col-xs-11 {
+  width: 91.66666667%;
+}
+.col-xs-10 {
+  width: 83.33333333%;
+}
+.col-xs-9 {
+  width: 75%;
+}
+.col-xs-8 {
+  width: 66.66666667%;
+}
+.col-xs-7 {
+  width: 58.33333333%;
+}
+.col-xs-6 {
+  width: 50%;
+}
+.col-xs-5 {
+  width: 41.66666667%;
+}
+.col-xs-4 {
+  width: 33.33333333%;
+}
+.col-xs-3 {
+  width: 25%;
+}
+.col-xs-2-4 {
+  width: 20%;
+}
+.col-xs-2 {
+  width: 16.66666667%;
+}
+.col-xs-1 {
+  width: 8.33333333%;
+}
+/* Формируем контейнеры для устройств с малым разрешением экрана (Tablet PC). */
+@media (min-width: 768px) {
+  .col-sm-1,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-sm-2,
+  .col-sm-2-4,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-2-4 {
+    width: 20%;
+  }
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+}
+/* Формируем контейнеры для устройств со среднем разрешением экрана (Medium Desktop). */
+@media (min-width: 992px) {
+  .col-md-1,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9 {
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+}
+/* Формируем контейнеры для устройств с максимально большим разрешением экрана (Large Desktop). */
+@media (min-width: 1200px) {
+  .col-lg-1,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9 {
+    float: left;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+}
+/* Before и After. */
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Оформляем контейнер HTML. */
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent;
+}
+/* Свойство принудительного центрирования блока. */
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Свойство принудительного позиционирования блока справа. */
+.pull-right {
+  float: right !important;
+}
+/* Свойство принудительного позиционирования блока слева. */
+.pull-left {
+  float: left !important;
+}
+/* Свойство принудительного скрытия блока. */
+.hide {
+  display: none !important;
+}
+/* Свойство принудительного отображения блока. */
+.show {
+  display: block !important;
+}
+/* Свойство принудительного скрытия блока, в зависимости от разрешения экрана. */
+.hidden,
+.visible-lg,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block,
+.visible-md,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-sm,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-xs,
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block {
+  display: none !important;
+}
+/* Свойство принудительного скрытия блока методом visibility. */
+.invisible {
+  visibility: hidden;
+}
+/* Свойство принудительного скрытия текстовой информации. */
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+/* Свойство фиксированного позиционирования. */
+.affix {
+  position: fixed;
+}
+/* Свойство обработки viewport. */
+@-ms-viewport {
+  width: device-width;
+}
+/* Свойство принудительного отображения блоков и таблиц при разрешении дисплея не более 767px. */
+@media (max-width: 767px) {
+  .visible-xs {
+    display: block !important;
+  }
+  table.visible-xs {
+    display: table !important;
+  }
+  tr.visible-xs {
+    display: table-row !important;
+  }
+  td.visible-xs,
+  th.visible-xs {
+    display: table-cell !important;
+  }
+  .visible-xs-block {
+    display: block !important;
+  }
+  .visible-xs-inline {
+    display: inline !important;
+  }
+  .visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+/* Свойство принудительного отображения блоков и таблиц при разрешении дисплея не более 991px и не менее 768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-sm {
+    display: block !important;
+  }
+  table.visible-sm {
+    display: table !important;
+  }
+  tr.visible-sm {
+    display: table-row !important;
+  }
+  td.visible-sm,
+  th.visible-sm {
+    display: table-cell !important;
+  }
+  .visible-sm-block {
+    display: block !important;
+  }
+  .visible-sm-inline {
+    display: inline !important;
+  }
+  .visible-sm-inline-block {
+    display: inline-block !important;
+  }
+}
+/* Свойство принудительного отображения блоков и таблиц при разрешении дисплея не более 1199px и не менее 992px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-md {
+    display: block !important;
+  }
+  table.visible-md {
+    display: table !important;
+  }
+  tr.visible-md {
+    display: table-row !important;
+  }
+  td.visible-md,
+  th.visible-md {
+    display: table-cell !important;
+  }
+  .visible-md-block {
+    display: block !important;
+  }
+  .visible-md-inline {
+    display: inline !important;
+  }
+  .visible-md-inline-block {
+    display: inline-block !important;
+  }
+}
+/* Свойство принудительного отображения блоков и таблиц при разрешении дисплея не менее 1200px. */
+@media (min-width: 1200px) {
+  .visible-lg {
+    display: block !important;
+  }
+  table.visible-lg {
+    display: table !important;
+  }
+  tr.visible-lg {
+    display: table-row !important;
+  }
+  td.visible-lg,
+  th.visible-lg {
+    display: table-cell !important;
+  }
+  .visible-lg-block {
+    display: block !important;
+  }
+  .visible-lg-inline {
+    display: inline !important;
+  }
+  .visible-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+/* Свойство принудительного скрытия блока, при разрешении экрана не более 767px. */
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+/* Свойство принудительного скрытия блока, при разрешении экрана не менее 768px и не более 991px. */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+/* Свойство принудительного скрытия блока, при разрешении экрана не менее 992px и не более 1199px. */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+/* Свойство принудительного скрытия блока, при разрешении экрана не менее 1200px. */
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+/* Свойство принудительного скрытия блока, при методе print. */
+.visible-print {
+  display: none !important;
+}
+/* Свойство принудительного отображения блока, при методе print. */
+@media print {
+  .visible-print {
+    display: block !important;
+  }
+  table.visible-print {
+    display: table !important;
+  }
+  tr.visible-print {
+    display: table-row !important;
+  }
+  td.visible-print,
+  th.visible-print {
+    display: table-cell !important;
+  }
+}
+/* Свойство принудительного скрытия блока, при методе print. */
+.visible-print-block {
+  display: none !important;
+}
+/* Свойство принудительного отображения блока, при методе print. */
+@media print {
+  .visible-print-block {
+    display: block !important;
+  }
+}
+/* Свойство принудительного скрытия блока, при методе print-inline. */
+.visible-print-inline {
+  display: none !important;
+}
+/* Свойство принудительного отображения блока, при методе print-inline. */
+@media print {
+  .visible-print-inline {
+    display: inline !important;
+  }
+}
+/* Свойство принудительного скрытия блока, при методе print-inline. */
+.visible-print-inline-block {
+  display: none !important;
+}
+/* Свойство принудительного скрытия блока, при методе print-inline. */
+@media print {
+  .visible-print-inline-block {
+    display: inline-block !important;
+  }
+  .hidden-print {
+    display: none !important;
+  }
+}
+/* Свойство запрета полного обтекания текста. */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  display: inline-block;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* Свойство принудительного позиционирования текста по центру. */
+.text-center {
+  text-align: center !important;
+}
+/* Свойство принудительного позиционирования текста по левому краю. */
+.text-left {
+  text-align: left !important;
+}
+/* Свойство принудительного позиционирования текста по правому краю. */
+.text-right {
+  text-align: right !important;
+}
+/* Свойство принудительного скрытия блока. */
+.display-none {
+  display: none !important;
+}
+/**
+ * Формируем блок всплывающей подсказки. (Tooltip).
+ */
+.tooltip {
+  position: absolute;
+  z-index: 1020;
+  display: block;
+  padding: 5px;
+  font-size: 11px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  visibility: visible;
+}
+/* Свойство отображения подсказки. */
+.tooltip.in {
+  opacity: .8;
+  filter: alpha(opacity=80);
+}
+/* Свойство отображения подсказки сверху. */
+.tooltip.top {
+  margin-top: -2px;
+}
+/* Свойство отображения подсказки справа. */
+.tooltip.right {
+  margin-left: 2px;
+}
+/* Свойство отображения подсказки снизу. */
+.tooltip.bottom {
+  margin-top: 2px;
+}
+/* Свойство отображения подсказки слева. */
+.tooltip.left {
+  margin-left: -2px;
+}
+/* Свойство отображения стрелки подсказки сверху. */
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  border-top: 5px solid #000;
+  border-left: 5px solid transparent;
+}
+/* Свойство отображения стрелки подсказки слева. */
+.tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #000;
+}
+/* Свойство отображения стрелки подсказки снизу. */
+.tooltip.bottom .tooltip-arrow {
+  top: 0;
+  border-bottom: 5px solid #000;
+  border-left: 5px solid transparent;
+}
+/* Свойство отображения стрелки подсказки справа. */
+.tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-top: 5px solid transparent;
+  border-right: 5px solid #000;
+  border-bottom: 5px solid transparent;
+}
+/* Формируем основной контейнер подсказки. */
+.tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 2px;
+}
+/* Формируем основной контейнер подсказки внутри контейнера выпадающего списка. */
+.dropdown-menu,
+.tooltip-inner {
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+/* Формируем контейнер стрелки всплывающей подсказки. */
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+/**
+ * Формируем блок выдающего меню. (DropDown).
+ */
+.dropdown,
+.dropup {
+  position: relative;
+}
+/* Формируем "каретку" внутри выдающего меню. */
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: top;
+  border-top: 4px solid #000;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  content: "";
+  opacity: .3;
+  filter: alpha(opacity=30);
+}
+/* Формируем позиционирования "каретки". */
+.dropdown .caret {
+  margin-top: 8px;
+  margin-left: 2px;
+}
+/* Формируем отображение каретки по свойству "hover". */
+.dropdown:hover .caret,
+.open .caret {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/* Формируем основной контейнер выпадающего меню. */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 180px;
+  padding: 4px 0;
+  margin: 1px 0 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+/* Формируем свойство выпадающего меню внутри контейнера модального окна. */
+.dropdown-menu,
+.modal-content {
+  -webkit-background-clip: padding-box;
+}
+/* Формируем свойство принудительного позиционирования выпадающего меню справа. */
+.dropdown-menu.pull-right {
+  right: 0;
+  left: auto;
+}
+/* Формируем свойство divider выпадающего меню. */
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 8px 1px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #fff;
+}
+/* Оформляем ссылки внутри выпадающего меню. */
+.dropdown-menu a {
+  -webkit-transition: background-color 200ms linear;
+  -moz-transition: background-color 200ms linear;
+  -o-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  display: block;
+  padding: 3px 15px;
+  clear: both;
+  font-weight: 400;
+  line-height: 18px;
+  color: #333;
+  white-space: nowrap;
+  text-decoration: none;
+}
+/* Оформляем ссылки внутри выдающего меню при событии hover, а так же при наличии свойства active. */
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover,
+.dropdown-menu li > a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #575c72;
+}
+/* Формируем свойство принудительного отображения контента выпадающего меню. */
+.open .dropdown-menu {
+  display: block;
+}
+/* Формируем свойство принудительного позиционирования выпадающего меню справа. */
+.pull-right .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+/* Формируем "каретку" внутри навигационного меню. */
+.dropup .caret,
+.navbar-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px solid #000;
+  content: "\2191";
+}
+/* Формируем свойство отображения выпадающего меню внутри фиксированной навигации. */
+.dropup .dropdown-menu,
+.navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 1px;
+}
+/**
+ * Формируем блок всплываюего окна. (ModalBox).
+ */
+.modal-open {
+  overflow: hidden;
+}
+/* Формируем основной контейнер модального окна. */
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+/* Формируем свойство плавного отображения модального окна. */
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+}
+/* Формируем свойство отображения модального окна. */
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+/* Формируем свойство запрета скроллинга модального окна. */
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* Формируем базовый контейнер контента модального окна. */
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+/* Формируем основной конейнер контента модального окна. */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: none;
+  border-radius: 0;
+  outline: 0;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  color: #333;
+}
+/* Формируем overlay при вызове модального окна. */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+/* Формируем свойство fade модального окна. */
+.modal-backdrop.fade {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+/* Формируем свойство in модального окна. */
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+/* Формируем шапку внутри модальног окна. */
+.modal-header {
+  min-height: 16.43px;
+  padding: 15px;
+  border-bottom: 1px dashed #e7e7e7;
+  color: #333;
+  font-weight: 400;
+}
+/* Формируем иконку закрытия модального окна. */
+.modal-header .close {
+  margin-top: -2px;
+}
+/* Формируем заголовок внутри модального окна. */
+.modal-title {
+  margin: 0;
+  line-height: 1.42857143;
+}
+/* Формируем контекст внутри модального окна. */
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+/* Формируем подвальную часть внутри модального окна. */
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px dashed #e7e7e7;
+}
+/* Изменяем размеры и свойства модального окна при разрешении дисплея не менее 786px. */
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+  .modal-content {
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  .modal-sm {
+    width: 300px;
+  }
+}
+/* Изменяем размеры и свойства модального окна при разрешении дисплея не менее 992px. */
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 900px;
+  }
+}
+.hr-gray {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(204, 204, 204, 0), rgba(204, 204, 204, 0.75), rgba(204, 204, 204, 0));
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.hr-black {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+/*
+ * fullPage 2.8.9
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+.fp-enabled body,
+html.fp-enabled {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#superContainer {
+  height: 100%;
+  position: relative;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+.fp-section {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.fp-slide {
+  float: left;
+}
+.fp-slide,
+.fp-slidesContainer {
+  height: 100%;
+  display: block;
+}
+.fp-slides {
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.fp-section.fp-table,
+.fp-slide.fp-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.fp-tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+.fp-slidesContainer {
+  float: left;
+  position: relative;
+}
+.fp-controlArrow {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -38px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.fp-controlArrow.fp-prev {
+  left: 15px;
+  width: 0;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #fff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+  right: 15px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent #fff;
+}
+.fp-scrollable {
+  overflow: hidden;
+  position: relative;
+}
+.fp-scroller {
+  overflow: hidden;
+}
+.iScrollIndicator {
+  border: 0 !important;
+}
+.fp-notransition {
+  -webkit-transition: none!important;
+  transition: none !important;
+}
+#fp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+#fp-nav.right {
+  right: 17px;
+}
+#fp-nav.left {
+  left: 17px;
+}
+.fp-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.fp-slidesNav.bottom {
+  bottom: 17px;
+}
+.fp-slidesNav.top {
+  top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative;
+}
+.fp-slidesNav ul li {
+  display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  height: 12px;
+  width: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 100%;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+  height: 4px;
+  width: 4px;
+  border: 0;
+  background: #333;
+  left: 50%;
+  top: 50%;
+  margin: -2px 0 0 -2px;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+#fp-nav ul li:hover a span,
+.fp-slidesNav ul li:hover a span {
+  width: 10px;
+  height: 10px;
+  margin: -5px 0 0 -5px;
+}
+#fp-nav ul li .fp-tooltip {
+  position: absolute;
+  top: -2px;
+  color: #fff;
+  font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+  white-space: nowrap;
+  max-width: 220px;
+  overflow: hidden;
+  display: block;
+  opacity: 0;
+  width: 0;
+  cursor: pointer;
+}
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  width: auto;
+  opacity: 1;
+}
+#fp-nav ul li .fp-tooltip.right {
+  right: 20px;
+}
+#fp-nav ul li .fp-tooltip.left {
+  left: 20px;
+}
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell,
+.fp-auto-height.fp-section {
+  height: auto !important;
+}
+.fp-responsive .fp-auto-height-responsive .fp-slide,
+.fp-responsive .fp-auto-height-responsive .fp-tableCell,
+.fp-responsive .fp-auto-height-responsive.fp-section {
+  height: auto !important;
+}
+.jspContainer {
+  position: relative;
+}
+.jspPane {
+  position: absolute;
+  background: url('../i/blank.gif');
+}
+.jspVerticalBar {
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 1px;
+  height: 100%;
+}
+.jspHorizontalBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  display: none !important;
+}
+.jspCap {
+  display: none;
+}
+.jspHorizontalBar .jspCap {
+  float: left;
+}
+.jspTrack {
+  background: url('../i/scroll_texture.png');
+  position: relative;
+}
+.jspDrag {
+  background: #009FE3;
+  position: relative;
+  width: 3px;
+  top: 0;
+  left: -1px;
+  cursor: pointer;
+}
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag {
+  float: left;
+  height: 100%;
+}
+.jspArrow {
+  background: #50506d;
+  text-indent: -20000px;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+.jspArrow.jspDisabled {
+  cursor: default;
+  background: #80808d;
+}
+.jspVerticalBar .jspArrow {
+  height: 16px;
+}
+.jspHorizontalBar .jspArrow {
+  width: 16px;
+  float: left;
+  height: 100%;
+}
+.jspVerticalBar .jspArrow:focus {
+  outline: none;
+}
+.jspCorner {
+  background: #eeeef4;
+  float: left;
+  height: 100%;
+}
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner {
+  margin: 0 -3px 0 0;
+}
+/*.ad-gallery {
+    width: 600px;
+    //top: 150px;
+}
+.ad-gallery, .ad-gallery * {
+    margin: 0;
+    padding: 0;
+}
+.ad-gallery .ad-image-wrapper {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.ad-gallery .ad-image-wrapper .ad-loader {
+    position: absolute;
+    z-index: 10;
+    top: 48%;
+    left: 48%;
+    border: 1px solid #CCC;
+}
+.ad-gallery .ad-image-wrapper .ad-next {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+    display: block;
+    z-index: 100;
+}
+.ad-gallery .ad-image-wrapper .ad-prev {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    cursor: pointer;
+    display: block;
+    z-index: 100;
+}
+.ad-gallery .ad-image-wrapper .ad-prev, .ad-gallery .ad-image-wrapper .ad-next {
+
+    //background: url(non-existing.jpg)\9
+}
+.ad-gallery .ad-image-wrapper .ad-prev .ad-prev-image, .ad-gallery .ad-image-wrapper .ad-next .ad-next-image {
+    background: url(ad_prev.png);
+    width: 30px;
+    height: 30px;
+    display: none;
+    position: absolute;
+    top: 47%;
+    left: 0;
+    z-index: 101;
+}
+.ad-gallery .ad-image-wrapper .ad-next .ad-next-image {
+    background: url(ad_next.png);
+    width: 30px;
+    height: 30px;
+    right: 0;
+    left: auto;
+}
+.ad-gallery .ad-image-wrapper .ad-image {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.ad-gallery .ad-image-wrapper .ad-image .ad-image-description {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 2%;
+    text-align: left;
+    width: 96%;
+    z-index: 2;
+    background: url(opa75.png);
+    color: #000;
+}
+* html .ad-gallery .ad-image-wrapper .ad-image .ad-image-description {
+    background: none;
+    //filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (enabled=true, sizingMethod=scale, src='opa75.png');
+}
+.ad-gallery .ad-image-wrapper .ad-image .ad-image-description .ad-description-title {
+    display: block;
+}
+.ad-gallery .ad-controls {
+    height: 20px;
+}
+.ad-gallery .ad-info {
+    float: left;
+}
+.ad-gallery .ad-slideshow-controls {
+    float: right;
+}
+.ad-gallery .ad-slideshow-controls .ad-slideshow-start, .ad-gallery .ad-slideshow-controls .ad-slideshow-stop {
+    padding-left: 5px;
+    cursor: pointer;
+}
+.ad-gallery .ad-slideshow-controls .ad-slideshow-countdown {
+    padding-left: 5px;
+    font-size: 0.9em;
+}
+.ad-gallery .ad-slideshow-running .ad-slideshow-start {
+    cursor: default;
+    font-style: italic;
+}
+.ad-gallery .ad-nav {
+    width: 100%;
+    position: relative;
+    position: absolute;
+}
+.ad-gallery .ad-forward, .ad-gallery .ad-back {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 10;
+}
+
+* html .ad-gallery .ad-forward, .ad-gallery .ad-back {
+    height: 100px;
+}
+.ad-gallery .ad-back {
+    cursor: pointer;
+    left: -20px;
+    width: 13px;
+    display: block;
+    background: url(ad_scroll_back.png) 0px 22px no-repeat;
+}
+.ad-gallery .ad-forward {
+    cursor: pointer;
+    display: block;
+    right: -20px;
+    width: 13px;
+    background: url(ad_scroll_forward.png) 0px 22px no-repeat;
+}
+.ad-gallery .ad-nav .ad-thumbs {
+    overflow: hidden;
+    width: 100%;
+}
+.ad-gallery .ad-thumbs ul {
+    float: left;
+    width: 9000px;
+    list-style: none;
+}
+.ad-gallery .ad-thumbs li {
+    float: left;
+    padding-right: 5px;
+}
+.ad-gallery .ad-thumbs li a {
+    display: block;
+}
+.ad-gallery .ad-thumbs li a img {
+    border: 3px solid #CCC;
+    display: block;
+}
+.ad-gallery .ad-thumbs li a.ad-active img {
+    border: 3px solid #616161;
+}
+
+.ad-preloads {
+    position: absolute;
+    left: -9000px;
+    top: -9000px;
+} */
+.vegas-wrapper,
+.vegas-overlay,
+.vegas-timer,
+.vegas-slide,
+.vegas-slide-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.vegas-overlay {
+  opacity: .5;
+  background: transparent url("overlays/02.png") center center repeat;
+}
+.vegas-timer {
+  top: auto;
+  bottom: 0;
+  height: 2px;
+}
+.vegas-timer-progress {
+  width: 0%;
+  height: 100%;
+  background: white;
+  -webkit-transition: width ease-out;
+  transition: width ease-out;
+}
+.vegas-timer-running .vegas-timer-progress {
+  width: 100%;
+}
+.vegas-slide,
+.vegas-slide-inner {
+  margin: 0;
+  padding: 0;
+  background: transparent center center no-repeat;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform, opacity;
+}
+body .vegas-container {
+  overflow: hidden !important;
+  position: relative;
+}
+.vegas-video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+body.vegas-container {
+  overflow: auto;
+  position: static;
+  z-index: -2;
+}
+body.vegas-container > .vegas-timer,
+body.vegas-container > .vegas-overlay,
+body.vegas-container > .vegas-slide {
+  position: fixed;
+  z-index: -1;
+}
+/* Target Safari IOS7+ in order to add 76px */
+_::full-page-media,
+_:future,
+:root body.vegas-container > .vegas-slide,
+:root body.vegas-container > .vegas-overlay {
+  bottom: -76px;
+}
+/*******************************************/
+/* blur transition */
+/*******************************************/
+.vegas-transition-blur,
+.vegas-transition-blur2 {
+  opacity: 0;
+  -webkit-filter: blur(32px);
+  filter: blur(32px);
+}
+.vegas-transition-blur-in,
+.vegas-transition-blur2-in {
+  opacity: 1;
+  -webkit-filter: blur(0px);
+  filter: blur(0px);
+}
+.vegas-transition-blur2-out {
+  opacity: 0;
+}
+/*******************************************/
+/* burn transition */
+/*******************************************/
+.vegas-transition-burn,
+.vegas-transition-burn2 {
+  opacity: 0;
+  -webkit-filter: contrast(1000%) saturate(1000%);
+  filter: contrast(1000%) saturate(1000%);
+}
+.vegas-transition-burn-in,
+.vegas-transition-burn2-in {
+  opacity: 1;
+  -webkit-filter: contrast(100%) saturate(100%);
+  filter: contrast(100%) saturate(100%);
+}
+.vegas-transition-burn2-out {
+  opacity: 0;
+  -webkit-filter: contrast(1000%) saturate(1000%);
+  filter: contrast(1000%) saturate(1000%);
+}
+/*******************************************/
+/* fade transition */
+/*******************************************/
+.vegas-transition-fade,
+.vegas-transition-fade2 {
+  opacity: 0;
+}
+.vegas-transition-fade-in,
+.vegas-transition-fade2-in {
+  opacity: 1;
+}
+.vegas-transition-fade2-out {
+  opacity: 0;
+}
+/*******************************************/
+/* flash transition */
+/*******************************************/
+.vegas-transition-flash,
+.vegas-transition-flash2 {
+  opacity: 0;
+  -webkit-filter: brightness(25);
+  filter: brightness(25);
+}
+.vegas-transition-flash-in,
+.vegas-transition-flash2-in {
+  opacity: 1;
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+.vegas-transition-flash2-out {
+  opacity: 0;
+  -webkit-filter: brightness(25);
+  filter: brightness(25);
+}
+/*******************************************/
+/* negative transition */
+/*******************************************/
+.vegas-transition-negative,
+.vegas-transition-negative2 {
+  opacity: 0;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.vegas-transition-negative-in,
+.vegas-transition-negative2-in {
+  opacity: 1;
+  -webkit-filter: invert(0);
+  filter: invert(0);
+}
+.vegas-transition-negative2-out {
+  opacity: 0;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+/*******************************************/
+/* slideDown transition */
+/*******************************************/
+.vegas-transition-slideDown,
+.vegas-transition-slideDown2 {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+.vegas-transition-slideDown-in,
+.vegas-transition-slideDown2-in {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+.vegas-transition-slideDown2-out {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+/*******************************************/
+/* slideLeft transition */
+/*******************************************/
+.vegas-transition-slideLeft,
+.vegas-transition-slideLeft2 {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+.vegas-transition-slideLeft-in,
+.vegas-transition-slideLeft2-in {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+.vegas-transition-slideLeft2-out {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+/*******************************************/
+/* slideRight transition */
+/*******************************************/
+.vegas-transition-slideRight,
+.vegas-transition-slideRight2 {
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+.vegas-transition-slideRight-in,
+.vegas-transition-slideRight2-in {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+}
+.vegas-transition-slideRight2-out {
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+/*******************************************/
+/* slideUp transition */
+/*******************************************/
+.vegas-transition-slideUp,
+.vegas-transition-slideUp2 {
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+.vegas-transition-slideUp-in,
+.vegas-transition-slideUp2-in {
+  -webkit-transform: translateY(0%);
+  transform: translateY(0%);
+}
+.vegas-transition-slideUp2-out {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+/*******************************************/
+/* swirlLeft transition */
+/*******************************************/
+.vegas-transition-swirlLeft,
+.vegas-transition-swirlLeft2 {
+  -webkit-transform: scale(2) rotate(35deg);
+  transform: scale(2) rotate(35deg);
+  opacity: 0;
+}
+.vegas-transition-swirlLeft-in,
+.vegas-transition-swirlLeft2-in {
+  -webkit-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+.vegas-transition-swirlLeft2-out {
+  -webkit-transform: scale(2) rotate(-35deg);
+  transform: scale(2) rotate(-35deg);
+  opacity: 0;
+}
+/*******************************************/
+/* swirlRight transition */
+/*******************************************/
+.vegas-transition-swirlRight,
+.vegas-transition-swirlRight2 {
+  -webkit-transform: scale(2) rotate(-35deg);
+  transform: scale(2) rotate(-35deg);
+  opacity: 0;
+}
+.vegas-transition-swirlRight-in,
+.vegas-transition-swirlRight2-in {
+  -webkit-transform: scale(1) rotate(0deg);
+  transform: scale(1) rotate(0deg);
+  opacity: 1;
+}
+.vegas-transition-swirlRight2-out {
+  -webkit-transform: scale(2) rotate(35deg);
+  transform: scale(2) rotate(35deg);
+  opacity: 0;
+}
+/*******************************************/
+/* zoomIn transition */
+/*******************************************/
+.vegas-transition-zoomIn,
+.vegas-transition-zoomIn2 {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+}
+.vegas-transition-zoomIn-in,
+.vegas-transition-zoomIn2-in {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.vegas-transition-zoomIn2-out {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  opacity: 0;
+}
+/*******************************************/
+/* zoomOut transition */
+/*******************************************/
+.vegas-transition-zoomOut,
+.vegas-transition-zoomOut2 {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  opacity: 0;
+}
+.vegas-transition-zoomOut-in,
+.vegas-transition-zoomOut2-in {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.vegas-transition-zoomOut2-out {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+}
+/*******************************************/
+/* kenburns animation */
+/*******************************************/
+.vegas-animation-kenburns {
+  -webkit-animation: kenburns ease-out;
+  animation: kenburns ease-out;
+}
+@-webkit-keyframes kenburns {
+  0% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes kenburns {
+  0% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/*******************************************/
+/* kenburnsDownLeft animation */
+/*******************************************/
+.vegas-animation-kenburnsDownLeft {
+  -webkit-animation: kenburnsDownLeft ease-out;
+  animation: kenburnsDownLeft ease-out;
+}
+@-webkit-keyframes kenburnsDownLeft {
+  0% {
+    -webkit-transform: scale(1.5) translate(10%, -10%);
+    transform: scale(1.5) translate(10%, -10%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+@keyframes kenburnsDownLeft {
+  0% {
+    -webkit-transform: scale(1.5) translate(10%, -10%);
+    transform: scale(1.5) translate(10%, -10%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+/*******************************************/
+/* kenburnsDownRight animation */
+/*******************************************/
+.vegas-animation-kenburnsDownRight {
+  -webkit-animation: kenburnsDownRight ease-out;
+  animation: kenburnsDownRight ease-out;
+}
+@-webkit-keyframes kenburnsDownRight {
+  0% {
+    -webkit-transform: scale(1.5) translate(-10%, -10%);
+    transform: scale(1.5) translate(-10%, -10%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+@keyframes kenburnsDownRight {
+  0% {
+    -webkit-transform: scale(1.5) translate(-10%, -10%);
+    transform: scale(1.5) translate(-10%, -10%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+/*******************************************/
+/* kenburnsDown animation */
+/*******************************************/
+.vegas-animation-kenburnsDown {
+  -webkit-animation: kenburnsDown ease-out;
+  animation: kenburnsDown ease-out;
+}
+@-webkit-keyframes kenburnsDown {
+  0% {
+    -webkit-transform: scale(1.5) translate(0, -10%);
+    transform: scale(1.5) translate(0, -10%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+@keyframes kenburnsDown {
+  0% {
+    -webkit-transform: scale(1.5) translate(0, -10%);
+    transform: scale(1.5) translate(0, -10%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+/*******************************************/
+/* kenburnsLeft animation */
+/*******************************************/
+.vegas-animation-kenburnsLeft {
+  -webkit-animation: kenburnsLeft ease-out;
+  animation: kenburnsLeft ease-out;
+}
+@-webkit-keyframes kenburnsLeft {
+  0% {
+    -webkit-transform: scale(1.5) translate(10%, 0);
+    transform: scale(1.5) translate(10%, 0);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+@keyframes kenburnsLeft {
+  0% {
+    -webkit-transform: scale(1.5) translate(10%, 0);
+    transform: scale(1.5) translate(10%, 0);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+/*******************************************/
+/* kenburnsRight animation */
+/*******************************************/
+.vegas-animation-kenburnsRight {
+  -webkit-animation: kenburnsRight ease-out;
+  animation: kenburnsRight ease-out;
+}
+@-webkit-keyframes kenburnsRight {
+  0% {
+    -webkit-transform: scale(1.5) translate(-10%, 0);
+    transform: scale(1.5) translate(-10%, 0);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+@keyframes kenburnsRight {
+  0% {
+    -webkit-transform: scale(1.5) translate(-10%, 0);
+    transform: scale(1.5) translate(-10%, 0);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+/*******************************************/
+/* kenburnsUpLeft animation */
+/*******************************************/
+.vegas-animation-kenburnsUpLeft {
+  -webkit-animation: kenburnsUpLeft ease-out;
+  animation: kenburnsUpLeft ease-out;
+}
+@-webkit-keyframes kenburnsUpLeft {
+  0% {
+    -webkit-transform: scale(1.5) translate(10%, 10%);
+    transform: scale(1.5) translate(10%, 10%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+@keyframes kenburnsUpLeft {
+  0% {
+    -webkit-transform: scale(1.5) translate(10%, 10%);
+    transform: scale(1.5) translate(10%, 10%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+/*******************************************/
+/* kenburnsUpRight animation */
+/*******************************************/
+.vegas-animation-kenburnsUpRight {
+  -webkit-animation: kenburnsUpRight ease-out;
+  animation: kenburnsUpRight ease-out;
+}
+@-webkit-keyframes kenburnsUpRight {
+  0% {
+    -webkit-transform: scale(1.5) translate(-10%, 10%);
+    transform: scale(1.5) translate(-10%, 10%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+@keyframes kenburnsUpRight {
+  0% {
+    -webkit-transform: scale(1.5) translate(-10%, 10%);
+    transform: scale(1.5) translate(-10%, 10%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+/*******************************************/
+/* kenburnsUp animation */
+/*******************************************/
+.vegas-animation-kenburnsUp {
+  -webkit-animation: kenburnsUp ease-out;
+  animation: kenburnsUp ease-out;
+}
+@-webkit-keyframes kenburnsUp {
+  0% {
+    -webkit-transform: scale(1.5) translate(0, 10%);
+    transform: scale(1.5) translate(0, 10%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+@keyframes kenburnsUp {
+  0% {
+    -webkit-transform: scale(1.5) translate(0, 10%);
+    transform: scale(1.5) translate(0, 10%);
+  }
+  100% {
+    -webkit-transform: scale(1) translate(0, 0);
+    transform: scale(1) translate(0, 0);
+  }
+}
+.transition-all {
+  transition: transform 5000ms;
+}
+.transition-zoomOut,
+.transition-zoomOut2 {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  opacity: 0;
+}
+.transition-zoomOut-in,
+.transition-zoomOut2-in {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.transition-zoomOut2-out {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}

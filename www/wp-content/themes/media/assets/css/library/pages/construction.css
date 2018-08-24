@@ -1,0 +1,86 @@
+div#construction__page {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+  /*div.point
+    {
+        position: fixed;
+        position: absolute;
+        z-index: 2;
+        top: 300px;
+        left: 300px;
+        background: url('/assets/images/construction/point.svg') no-repeat;
+        width: 108px;
+        height: 108px;
+
+        font-size: 30px;
+        text-align: center;
+        color: #E5E6E7;
+        padding-top: 25px;
+
+        span
+        {
+            display: block;
+            font-size: 13px;
+            line-height: 13px;
+        }
+
+    }
+
+    a.bottom__btn
+    {
+        display: block;
+        position: absolute;
+        bottom: 250px;
+    }*/
+}
+div#construction__page div.construction__window {
+  display: table;
+}
+div#construction__page div.construction__window div.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+div#construction__page div.construction__window div.middle div.window__c {
+  background: url('/assets/images/construction/window__overlay.svg') no-repeat;
+  margin: 0 auto;
+  width: 689px;
+  height: 506px;
+  position: relative;
+  color: #e5e6e7;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+div#construction__page div.construction__window div.middle div.window__c h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 30px;
+}
+div#construction__page div.construction__window div.middle div.window__c div.switch__section div.name {
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+div#construction__page div.construction__window div.middle div.window__c div.switch__section div.value a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e5e6e7;
+  text-align: center;
+  color: #e5e6e7;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 35px;
+}

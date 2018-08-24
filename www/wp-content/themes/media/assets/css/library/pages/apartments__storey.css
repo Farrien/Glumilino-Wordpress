@@ -1,0 +1,50 @@
+/**
+     * Страница "выбрать квартиру" (секция с общим планом квартир).
+     */
+div#apartments__storey__page {
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: rgba(0, 0, 0, 0.5);
+  display: table;
+}
+div#apartments__storey__page div.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+div#apartments__storey__page div.middle div.window {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  color: #E5E6E7;
+}
+div#apartments__storey__page div.middle div.window div.left__section {
+  width: 153px;
+  position: relative;
+  text-align: center;
+}
+div#apartments__storey__page div.middle div.window div.left__section div.section__name {
+  font-size: 34px;
+  border-bottom: 3px solid #E5E6E7;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+div#apartments__storey__page div.middle div.window div.left__section div.switch__section {
+  margin-top: 15px;
+}
+div#apartments__storey__page div.middle div.window div.left__section div.buttons__section {
+  margin-top: 70px;
+}
+div#apartments__storey__page div.middle div.window div.left__section div.buttons__section a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border: 3px solid #E5E6E7;
+  font-size: 17px;
+  text-decoration: none;
+  color: #E5E6E7;
+  margin-bottom: 10px;
+}

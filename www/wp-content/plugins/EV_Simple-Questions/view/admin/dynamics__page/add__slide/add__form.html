@@ -1,0 +1,57 @@
+<div class="title__block">
+    Загрузка фото
+    <a href="[[$plugin-url]]&section=dynamics__page" class="back">
+        Вернуться к списку фото
+    </a>
+</div>
+
+<div class="hr-gray-left"></div>
+<div class="notif error">
+    К загрузке допускаются файлы в форматах JPEG или PNG.
+</div>
+
+[[$error]]
+<div class="row clearfix">
+    <div class="col-xs-7">
+        <form action="[[$plugin-url]]&section=dynamics__page&action=add__slide&op=save" method="post" class="styling__form" enctype="multipart/form-data">
+            <input type="hidden" name="is__posting" value="true">
+            <select name="slide__title" style="width: 100%;
+            padding: 5px;">
+                <option value="">Выберите секцию</option>
+                <option value="1" [[$active__section__1]]>Секция А</option>
+                <option value="2" [[$active__section__2]]>Секция Б</option>
+                <option value="3" [[$active__section__3]]>Секция В</option>
+                <option value="4" [[$active__section__4]]>Секция Г</option>
+                <option value="5" [[$active__section__5]]>Секция Д</option>
+            </select>
+
+            <select name="slide__description" style="width: 100%;
+            padding: 5px;">
+                <option value="">Выберите год</option>
+                <option value="2017" [[$active__year__2017]]>2017</option>
+                <option value="2016" [[$active__year__2016]]>2016</option>
+                <option value="2015" [[$active__year__2015]]>2015</option>
+                <option value="2014" [[$active__year__2014]]>2014</option>
+            </select>
+
+            <!-- <textarea placeholder="Текст на изображении" name="slide__title" style="height: 100px;">[[$title]]</textarea>
+            <textarea placeholder="Текст под изображением" name="slide__description">[[$description]]</textarea> -->
+            <div>
+                <div class="file_upload">
+                    <button type="button">Добавить</button>
+                    <div>Фотография</div>
+                    <input type="file" name="slide__image">
+                </div>
+            </div>
+
+            <button type="submit">Сохранить</button>
+            <a href="[[$plugin-url]]&section=dynamics__page" class="submit">Вернуться к списку фотографий</a>
+        </form>
+    </div>
+
+    <div class="col-xs-5">
+        <div>
+            <img src="[[$image]]" class="round" width="100%">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<div class="title__block">Редактирование информации</div>
+<div class="hr-gray-left"></div>
+
+[[$error]]
+<div class="row clearfix">
+    <div class="col-xs-12">
+        <form action="[[$section__url]]&op=save" method="post" class="styling__form" enctype="multipart/form-data">
+            <input type="hidden" name="is__posting" value="true">
+            <table class="table-control" width="100%">
+                <thead>
+                <th width="300">
+
+                </th>
+                <th>
+                </th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Ссылка на камеру #1:</td>
+                    <td><input type="text" name="cams1" value="[[$cams1]]" placeholder="http://www.cams-....."></td>
+                </tr>
+                <tr>
+                    <td>Ссылка на камеру #2:</td>
+                    <td><input type="text" name="cams2" value="[[$cams2]]" placeholder="http://www.cams-....."></td>
+                </tr>
+                <tr>
+                    <td>Ссылка на камеру #3:</td>
+                    <td><input type="text" name="cams3" value="[[$cams3]]" placeholder="http://www.cams-....."></td>
+                </tr>
+                <tr>
+                    <td>Ссылка на камеру #4:</td>
+                    <td><input type="text" name="cams4" value="[[$cams4]]" placeholder="http://www.cams-....."></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Обновить информацию</button></td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>

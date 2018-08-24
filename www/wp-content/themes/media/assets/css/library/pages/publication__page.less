@@ -1,0 +1,183 @@
+/**
+ *
+ */
+div#publication__page
+{
+    display: table;
+
+    div.middle
+    {
+        display: table-cell;
+        vertical-align: middle;
+
+        div.window
+        {
+            width: 1041px;
+            height: 584px;
+            background: url('/assets/images/about__page/background.svg') no-repeat;
+            margin: 0 auto;
+            padding-top: 50px;
+            position: relative;
+
+            div.scroll__container
+            {
+                width: 820px;
+                margin: 0 auto;
+                color: #fff;
+                overflow-y: auto;
+                height: 480px;
+                padding: 40px;
+                padding-top: 0;
+                font-family: @font__PTSans;
+                position: relative;
+
+                &::-webkit-scrollbar-track
+                {
+                    background-color: none;
+                }
+
+                &::-webkit-scrollbar
+                {
+                    width:3px;
+                    background-color: #E4E5E6;
+                }
+
+                &::-webkit-scrollbar-thumb
+                {
+                    background-color: @color-green;
+                }
+
+                &::-moz-scrollbar
+                {
+                    width: 10px;
+                    background-color: none;
+                }
+
+                &::-moz-scrollbar-track
+                {
+                    background-color: none;
+                }
+
+                &::-moz-scrollbar-thumb
+                {
+                    background-color: #24ab00;
+                }
+
+                div.title
+                {
+                    margin: 0 auto;
+                    text-align: center;
+                    font-family: @font__PRSerif;
+                    font-size: 34px;
+                    line-height: 34px;
+                }
+
+                div.slide__section
+                {
+                    margin-top: 50px;
+
+                    div.slide
+                    {
+                        padding: 15px;
+                        padding-right: 40px;
+                        position: absolute;
+                        display: none;
+                        .opacity(0);
+                        .scale(0.7);
+
+                        &.active
+                        {
+                            display: block;
+                        }
+
+                        div.publication__date
+                        {
+                            color: @color-green;
+                        }
+
+                        div.publication__title
+                        {
+                            font-size: 25px;
+                            font-family: @font__PRSerif;
+                            margin-bottom: 20px;
+                        }
+
+                        div.publication__content
+                        {
+                            font-size: 20px;
+                            line-height: 24px;
+                            margin-bottom: 20px;
+                        }
+
+                        div.publication__source
+                        {
+                            font-size: 17px;
+                        }
+
+                        div.publication__link
+                        {
+                            text-align: right;
+
+                            a
+                            {
+                                display: block;
+                                font-size: 17px;
+                                color: @color-green;
+                            }
+                        }
+                    }
+                }
+            }
+
+            div.slide__dotted
+            {
+                position: absolute;
+                bottom: 50px;
+                width: 100%;
+                text-align: center;
+                color: #fff;
+
+                a
+                {
+                    display: inline-block;
+                    width: 12px;
+                    height: 12px;
+                    background: #fff;
+                    .opacity(0.5);
+                    .border-radius(50%);
+                    .transition(all, .2s, linear);
+
+                    &:hover, &.active
+                    {
+                        .opacity(1);
+                    }
+                }
+            }
+
+            div.arrows
+            {
+                a
+                {
+                    position: absolute;
+                    width: 19px;
+                    height: 65px;
+                    display: block;
+                    top: 260px;
+
+                    &.left
+                    {
+                        background: url('/assets/images/publication__page/arrow__left.svg') no-repeat;
+                        left: 80px;
+                    }
+
+                    &.right
+                    {
+                        background: url('/assets/images/publication__page/arrow__right.svg') no-repeat;
+                        right: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+/**/

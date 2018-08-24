@@ -1,0 +1,9 @@
+div#address__page div.description__frame {
+  background: url('/assets/images/address__page/overlay.svg') no-repeat;
+  width: 700px;
+  height: 584px;
+  position: absolute;
+  z-index: 2;
+  right: 300px;
+  top: 180px;
+}

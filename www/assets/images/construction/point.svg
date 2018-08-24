@@ -1,0 +1,24 @@
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In  -->
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="108.8px" height="108.8px" viewBox="0 0 108.8 108.8" enable-background="new 0 0 108.8 108.8"
+	 xml:space="preserve">
+<defs>
+</defs>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="54.3844" x2="108.7688" y2="54.3844">
+		<stop  offset="0" style="stop-color:#26335D"/>
+		<stop  offset="0.9286" style="stop-color:#1B294C"/>
+	</linearGradient>
+	<polygon fill="url(#SVGID_1_)" points="54.4,4.8 63,0 69.7,7.3 79.4,5.3 83.5,14.3 93.3,15.4 94.5,25.3 103.4,29.4 101.5,39.1 
+		108.8,45.8 103.9,54.4 108.8,63 101.5,69.7 103.4,79.4 94.5,83.5 93.3,93.3 83.5,94.5 79.4,103.4 69.7,101.5 63,108.8 54.4,103.9 
+		45.8,108.8 39.1,101.5 29.4,103.4 25.3,94.5 15.4,93.3 14.3,83.5 5.3,79.4 7.3,69.7 0,63 4.8,54.4 0,45.8 7.3,39.1 5.3,29.4 
+		14.3,25.3 15.4,15.4 25.3,14.3 29.4,5.3 39.1,7.3 45.8,0 	"/>
+	
+		<polygon fill="none" stroke="#80C328" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+		54.4,98.3 46.8,102.6 40.8,96.2 32.2,97.9 28.6,89.9 19.9,88.9 18.9,80.2 10.9,76.5 12.6,68 6.2,62 10.5,54.4 6.2,46.8 12.6,40.8 
+		10.9,32.2 18.9,28.6 19.9,19.9 28.6,18.9 32.2,10.9 40.8,12.6 46.8,6.2 54.4,10.5 62,6.2 68,12.6 76.5,10.9 80.2,18.9 88.9,19.9 
+		89.9,28.6 97.9,32.2 96.2,40.8 102.6,46.8 98.3,54.4 102.6,62 96.2,68 97.9,76.5 89.9,80.2 88.9,88.9 80.2,89.9 76.5,97.9 68,96.2 
+		62,102.6 	"/>
+</g>
+</svg>

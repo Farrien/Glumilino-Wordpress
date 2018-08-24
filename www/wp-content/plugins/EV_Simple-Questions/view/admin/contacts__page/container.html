@@ -1,0 +1,34 @@
+<div class="title__block">Редактирование информации</div>
+<div class="hr-gray-left"></div>
+
+[[$error]]
+<div class="row clearfix">
+    <div class="col-xs-12">
+        <form action="[[$section__url]]&op=save" method="post" class="styling__form" enctype="multipart/form-data">
+            <input type="hidden" name="is__posting" value="true">
+            <table class="table-control" width="100%">
+                <thead>
+                <th width="300">
+
+                </th>
+                <th>
+                </th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Заголовок:</td>
+                    <td><input type="text" name="education__title" value="[[$education__title]]" placeholder="Место и окружение"></td>
+                </tr>
+                <tr>
+                    <td>Контент:</td>
+                    <td><textarea placeholder="Контент" name="education__content" class="redactor__textarea">[[$education__content]]</textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Обновить информацию</button></td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>

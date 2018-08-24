@@ -1,0 +1,20 @@
+<krpano version="1.18">
+    <network caching="false"/>
+    <view hlookat="0" vlookat="0" fovtype="DFOV" fov="110" fovmin="110" fovmax="110" limitview="auto" maxpixelzoom="1"/>
+
+    <preview url="../panos/pano01_View330017.tiles/preview.jpg" />
+
+    <image>
+        <cube url="../panos/pano01_View330017.tiles/pano_%s.jpg" />
+
+        <cube url="../panos/pano01_View330017.tiles/mobile/pano_%s.jpg" devices="mobile" />
+    </image>
+
+    <!-- place your scene hotspots here -->
+    <hotspot  url="../skin/vtourskin_hotspot.png" ath="-54.208" atv="-3.728" zoom="false" distorted="false" keep="false" rx="0.0" ry="0.0" rz="0.0" onclick="js(subload_pano(scene_cam014_cshading_beauty_view44, get(ath)));" />
+    <hotspot url="../skin/vtourskin_hotspot.png" ath="138.738" atv="-0.786" zoom="false" distorted="false" keep="false" rx="0.0" ry="0.0" rz="0.0" onclick="js(subload_pano(scene_pano01_view350002, get(ath)));" />
+    <hotspot  url="../skin/vtourskin_hotspot.png" ath="-104.882" atv="-6.832" zoom="false" distorted="false" keep="false" rx="0.0" ry="0.0" rz="0.0" onclick="js(subload_pano(scene_pano01_view39, get(ath)));" />
+    <hotspot  url="../skin/vtourskin_hotspot.png" ath="167.662" atv="-3.021" zoom="false" distorted="false" keep="false" rx="0.0" ry="0.0" rz="0.0" onclick="js(subload_pano(scene_pano01_cshading_beauty_view38, get(ath)));" />
+    <hotspot  url="../skin/vtourskin_hotspot.png" ath="-66.677" atv="-6.928" zoom="false" distorted="false" keep="false" rx="0.0" ry="0.0" rz="0.0" onclick="js(subload_pano(scene_pano01_view49, get(ath)));" />
+    <hotspot  url="../skin/vtourskin_hotspot.png" ath="-75.166" atv="-6.401"  zoom="false" distorted="false" keep="false" rx="0.0" ry="0.0" rz="0.0" onclick="js(subload_pano(scene_pano01_view34, get(ath)));" />
+</krpano>

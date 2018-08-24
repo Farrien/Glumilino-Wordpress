@@ -1,0 +1,170 @@
+//Формируем свойство установки border-radius.
+.border-radius (@radius: 5px)
+{
+    -webkit-border-radius: @radius; //Свойство для браузеров WebKit.
+    -moz-border-radius: @radius; //Свойство для браузеров Mozilla.
+    border-radius: @radius; //Свойство для остальных браузеров.
+}
+
+//Формируем свойство установки выборочного border-radius.
+.border-radius-custom (@topLeft: 5px, @topRight: 5px, @bottomLeft: 5px, @bottomRight: 5px)
+{
+    -webkit-border-radius: @topLeft @topRight @bottomRight @bottomLeft; //Свойство для браузеров WebKit.
+    -moz-border-radius: @topLeft @topRight @bottomRight @bottomLeft; //Свойство для браузеров Mozilla.
+    border-radius: @topLeft @topRight @bottomRight @bottomLeft; //Свойство для остальных браузеров.
+}
+
+//Формируем свойство установки размера фонового изображения.
+.background-size (@size: "cover")
+{
+    -webkit-background-size: @size; //Свойство для браузеров WebKit.
+    -moz-background-size: @size; //Свойство для браузеров Mozilla.
+    -o-background-size: @size; //Свойство для браузеров Opera.
+    background-size: @size; //Свойство для остальных браузеров.
+}
+
+
+//Формируем свойство установки box-shadow.
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5)
+{
+    -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha); //Свойство для браузеров WebKit.
+    -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha); //Свойство для браузеров Mozilla.
+    box-shadow: @x @y @blur rgba(0, 0, 0, @alpha); //Свойство для остальных браузеров.
+}
+
+.box-shadow-top (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5)
+{
+    /*-webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha); //Свойство для браузеров WebKit.
+    -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha); //Свойство для браузеров Mozilla.
+    box-shadow: @x @y @blur rgba(0, 0, 0, @alpha); //Свойство для остальных браузеров.*/
+
+    -webkit-box-shadow: @x -@y @blur 0px rgba(0,0,0,@alpha);
+    -moz-box-shadow: @x -@y @blur 0px rgba(0,0,0,@alpha);
+    box-shadow: @x -@y @blur 0px rgba(0,0,0,@alpha);
+}
+
+//Формируем свойство установки text-shadow.
+.text-shadow (@x: 3px, @y: 3px, @blur: 3px, @color: #ccc)
+{
+    text-shadow: @x @y @blur @color; //Свойство для всех браузеров.
+}
+
+.drop-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+    -webkit-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+    -moz-box-shadow:	@x @y @blur @spread rgba(0, 0, 0, @alpha);
+    box-shadow:		@x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+.inner-shadow (@x: 0, @y: 1px, @blur: 2px, @spread: 0, @alpha: 0.25) {
+    -webkit-box-shadow: inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+    -moz-box-shadow:    inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+    box-shadow:         inset @x @y @blur @spread rgba(0, 0, 0, @alpha);
+}
+
+//Формируем свойство установки градиенда.
+.gradient (@origin: left, @start: #ffffff, @stop: #000000)
+{
+    background-color: @start;
+    background-image: -webkit-linear-gradient(@origin , @start, @stop); //Свойство для браузеров WebKit.
+    background-image: -moz-linear-gradient(@origin, @start, @stop); //Свойство для браузеров Mozilla.
+    background-image: -o-linear-gradient(@origin, @start, @stop); //Свойство для браузеров Opera.
+    background-image: -ms-linear-gradient(@origin, @start, @stop); //Свойство для браузеров Microsoft.
+    background-image: linear-gradient(@origin, @start, @stop); //Свойство для остальных браузеров.
+}
+
+//Формируем свойство transition.
+.transition (@prop: all, @time: 1s, @ease: linear)
+{
+    -webkit-transition: @prop @time @ease; //Свойство для браузеров WebKit.
+    -moz-transition: @prop @time @ease; //Свойство для браузеров Mozilla.
+    -o-transition: @prop @time @ease; //Свойство для браузеров Opera.
+    -ms-transition: @prop @time @ease; //Свойство для браузеров Microsoft.
+    transition: @prop @time @ease; //Свойство для остальных браузеров.
+}
+
+//Формируем свойство управления анимацией.
+.animation (@name, @duration: 300ms, @delay: 0, @ease: ease)
+{
+    -webkit-animation: @name @duration @delay @ease;
+    -moz-animation: @name @duration @delay @ease;
+    -ms-animation: @name @duration @delay @ease;
+    animation: @name @duration @delay @ease;
+}
+
+//Формируем свойство управления прозрачностью.
+.opacity(@val)
+{
+    filter: 'progid:DXImageTransform.Microsoft.Alpha(opacity='@val*100')';
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity='@val*100')';
+    -moz-opacity: @val;
+    -khtml-opacity: @val;
+    opacity: @val;
+}
+
+//Формируем свойство расчета ширины элемента.
+.calcWidth(@rule)
+{
+    width: -webkit-calc(@rule);
+    width: expression(@rule);
+    width: -moz-calc(@rule);
+    width: -o-calc(@rule);
+    width: calc(@rule);
+}
+
+.transform(@string){
+    -webkit-transform: @string;
+    -moz-transform: 	 @string;
+    -ms-transform: 		 @string;
+    -o-transform: 		 @string;
+}
+.scale (@factor) {
+    -webkit-transform: scale(@factor);
+    -moz-transform: 	 scale(@factor);
+    -ms-transform: 		 scale(@factor);
+    -o-transform: 		 scale(@factor);
+}
+.rotate (@deg) {
+    -webkit-transform: rotate(@deg);
+    -moz-transform: 	 rotate(@deg);
+    -ms-transform: 		 rotate(@deg);
+    -o-transform: 		 rotate(@deg);
+}
+.skew (@deg, @deg2) {
+    -webkit-transform:       skew(@deg, @deg2);
+    -moz-transform: 	 skew(@deg, @deg2);
+    -ms-transform: 		 skew(@deg, @deg2);
+    -o-transform: 		 skew(@deg, @deg2);
+}
+.translate (@x, @y:0) {
+    -webkit-transform:       translate(@x, @y);
+    -moz-transform: 	 translate(@x, @y);
+    -ms-transform: 		 translate(@x, @y);
+    -o-transform: 		 translate(@x, @y);
+}
+.translate3d (@x, @y: 0, @z: 0) {
+    -webkit-transform:       translate3d(@x, @y, @z);
+    -moz-transform: 	 translate3d(@x, @y, @z);
+    -ms-transform: 		 translate3d(@x, @y, @z);
+    -o-transform: 		 translate3d(@x, @y, @z);
+}
+.perspective (@value: 1000) {
+    -webkit-perspective: 	@value;
+    -moz-perspective: 	@value;
+    -ms-perspective: 	@value;
+    perspective: 		@value;
+}
+.transform-origin (@x:center, @y:center) {
+    -webkit-transform-origin: @x @y;
+    -moz-transform-origin:    @x @y;
+    -ms-transform-origin:     @x @y;
+    -o-transform-origin:      @x @y;
+}
+
+.blur(@px: 5px)
+{
+    filter: blur(@px);
+    -webkit-filter: blur(@px);
+    -moz-filter: blur(@px);
+    -o-filter: blur(@px);
+    -ms-filter: blur(@px);
+}

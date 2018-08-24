@@ -1,0 +1,40 @@
+<div class="title__block">
+    Редактирование информации
+    <a href="[[$plugin-url]]&section=developer__page" class="back">
+        Вернуться назад
+    </a>
+</div>
+
+<div class="hr-gray-left"></div>
+<!-- <div class="notif error">
+    Описательная информации
+</div> -->
+
+[[$error]]
+<div class="row clearfix">
+    <div class="col-xs-12">
+        <form action="[[$plugin-url]]&section=developer__page&action=edit&op=save" method="post" class="styling__form" enctype="multipart/form-data">
+            <input type="hidden" name="is__posting" value="true">
+            <table class="table-control" width="100%">
+                <thead>
+                <th width="300"></th>
+                <th>
+                </th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Контент:</td>
+                    <td><textarea name="address__description" class="redactor__textarea">[[$description]]</textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">Обновить информацию</button>
+                        <a href="[[$plugin-url]]&section=developer__page" class="submit">Назад</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>

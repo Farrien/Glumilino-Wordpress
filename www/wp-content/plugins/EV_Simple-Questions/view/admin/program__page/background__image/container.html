@@ -1,0 +1,34 @@
+<div class="title__block">
+    Изменение фонового изображения страницы
+    <a href="[[$plugin-url]]&section=idea__page" class="back">Вернуться назад</a>
+</div>
+<div class="hr-gray-left"></div>
+
+<div class="notif error">
+    К загрузке фоновых изображений допускаются форматы JPEG или PNG.
+</div>
+
+[[$error]]
+<div class="row clearfix">
+    <div class="col-xs-7">
+        <form action="[[$plugin-url]]&section=idea__page&action=background__image&op=update__image" method="post" class="styling__form" enctype="multipart/form-data">
+            <input type="hidden" name="is__posting" value="true">
+            <div>
+                <div class="file_upload">
+                    <button type="button">Выбрать</button>
+                    <div>Фоновое изображение страницы</div>
+                    <input type="file" name="background__image">
+                </div>
+            </div>
+
+            <button type="submit" onclick="return confirm('Вы действительно ходите обновить фоновое изображение?');">Обновить изображение</button>
+            <a href="[[$plugin-url]]&section=idea__page" class="submit">Вернуться назад</a>
+        </form>
+    </div>
+
+    <div class="col-xs-5">
+        <div>
+            <img src="[[$image]]" class="round" width="100%">
+        </div>
+    </div>
+</div>

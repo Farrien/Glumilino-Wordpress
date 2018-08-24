@@ -1,0 +1,45 @@
+<div class="title__block">
+    Редактирование публикации
+    <a href="[[$plugin-url]]&section=publication__page" class="back">
+        Вернуться к списку публикаций
+    </a>
+</div>
+
+<div class="hr-gray-left"></div>
+[[$error]]
+
+<div class="row clearfix">
+    <div class="col-xs-12">
+        <form action="[[$plugin-url]]&section=publication__page&action=edit__slide&id=[[$id]]&op=update__slide" method="post" class="styling__form" enctype="multipart/form-data">
+            <input type="hidden" name="is__posting" value="true">
+            <table class="table-control" width="100%">
+                <thead>
+                <th width="300"></th>
+                <th></th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Заголовок:</td>
+                    <td><input type="text" name="title" value="[[$title]]" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td>Контент:</td>
+                    <td><textarea name="description" class="redactor__textarea">[[$description]]</textarea></td>
+                </tr>
+                <tr>
+                    <td>Дата:</td>
+                    <td><input type="text" name="date" value="[[$date]]" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td>Ссылка на источник:</td>
+                    <td><input type="text" name="link" value="[[$link]]" placeholder=""></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Обновить публикацию</button><a href="[[$plugin-url]]&section=publication__page" class="submit">К списку публикаций</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>

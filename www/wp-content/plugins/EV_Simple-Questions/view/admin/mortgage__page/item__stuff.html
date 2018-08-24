@@ -1,0 +1,17 @@
+<tr>
+    <!-- <td><div style="text-align: center;">
+        <a href="[[$section__url]]&do=up&sort=[[$sort]]&id=[[$id]]">Поднять вверх</a><br>
+        <a href="[[$section__url]]&do=down&sort=[[$sort]]&id=[[$id]]">Опустить вниз</a>
+    </div></td> -->
+    <td align="center" style="text-align: center;"><img src="[[$stuff__photo]]" width="100"></td>
+    <td style="font-size: 12px; font-weight: normal;">
+        [[$stuff__name]]
+    </td>
+    <td>[[$stuff__description]]</td>
+    <td>[[$stuff__content]]</td>
+    <td>
+        <div><a href="[[$section__url]]&action=edit__stuff&id=[[$id]]">Редактировать</a></div>
+        <div><a href="[[$section__url]]&action=delete__stuff&id=[[$id]]" onclick="return confirm('Вы действительно хотите удалить банк?');">Удалить банк</a></div>
+        <!-- <div><a href="[[$plugin-url]]">Удалить раздел</a></div> -->
+    </td>
+</tr>

@@ -1,0 +1,58 @@
+<div class="title__block">Редактирование информации о банке <a href="[[$section__url]]" class="back">Вернуться к списку банков</a></div>
+<div class="hr-gray-left"></div>
+
+[[$error]]
+<div class="row clearfix">
+    <div class="col-xs-12">
+        <form action="[[$section__url]]&action=edit__stuff&id=[[$id]]&op=save" method="post" class="styling__form" enctype="multipart/form-data">
+            <input type="hidden" name="is__posting" value="true">
+            <table class="table-control" width="100%">
+                <thead>
+                <th width="300">
+
+                </th>
+                <th>
+                </th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Ставка:</td>
+                    <td><input type="text" name="stuff__name" value="[[$stuff__name]]" placeholder="от 10%"></td>
+                </tr>
+                <tr>
+                    <td>Срок:</td>
+                    <td><input type="text" name="stuff__description" value="[[$stuff__description]]" placeholder="до 30 лет"></td>
+                </tr>
+                <tr>
+                    <td>Первоначальный взнос:</td>
+                    <td><input type="text" name="stuff__content" value="[[$stuff__content]]" placeholder="от 15%"></td>
+                </tr>
+                <tr>
+                    <td>Ссылка на сайт:</td>
+                    <td><input type="text" name="stuff__vznos" value="[[$stuff__vznos]]" placeholder="http://www.sberbank.ru"></td>
+                </tr>
+                <tr>
+                    <td>Логотип:</td>
+                    <td>
+                        <div>
+                            <div class="file_upload">
+                                <button type="button">Обновить</button>
+                                <div>Логотип банка</div>
+                                <input type="file" name="stuff__photo">
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            <img src="[[$stuff__photo]]" class="round" width="200">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="submit">Обновить информацию</button></td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>

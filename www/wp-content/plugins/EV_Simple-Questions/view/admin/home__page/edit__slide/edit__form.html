@@ -1,0 +1,43 @@
+<div class="title__block">
+    Редактирование слайда на главной странице
+    <a href="[[$plugin-url]]" class="back">
+        Вернуться к списку слайдов
+    </a>
+</div>
+
+<div class="hr-gray-left"></div>
+<div class="notif error">
+    Описательная информации
+</div>
+
+[[$error]]
+<div class="row clearfix">
+    <div class="col-xs-7">
+        <form action="[[$plugin-url]]&action=edit__slide&id=[[$id]]&op=update__slide" method="post" class="styling__form" enctype="multipart/form-data">
+            <input type="hidden" name="is__posting" value="true">
+            <input type="text" placeholder="Заголовок на слайде" name="slide__title" value="[[$title]]">
+            <textarea placeholder="Текст на слайде" name="slide__description">[[$description]]</textarea>
+            <div>
+                <div class="file_upload">
+                    <button type="button">Обновить</button>
+                    <div>Фоновое изображение слайда</div>
+                    <input type="file" name="slide__image">
+                </div>
+            </div>
+
+            <div class="radio__group">
+                <label><input type="radio" name="slide__align" value="left" [[$slide__align-left]]> Расположить текст слева</label>
+                <label><input type="radio" name="slide__align" value="right" [[$slide__align-right]]> Расположить текст справа</label>
+            </div>
+
+            <button type="submit">Сохранить</button>
+            <a href="[[$plugin-url]]&action=delete__slide&id=[[$id]]" class="submit" onclick="return confirm('Вы действительно ходите удалить слайд?');">Удалить слайд</a>
+        </form>
+    </div>
+
+    <div class="col-xs-5">
+        <div>
+            <img src="[[$image]]" class="round" width="100%">
+        </div>
+    </div>
+</div>

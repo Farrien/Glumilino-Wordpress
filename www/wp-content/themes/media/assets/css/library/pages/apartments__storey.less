@@ -1,0 +1,487 @@
+/**
+ * Страница "выбрать квартиру" (секция с общим планом квартир).
+ */
+div#apartments__storey__page
+{
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+
+    div.switch__section
+    {
+        div.tooltip__info
+        {
+            position: fixed;
+            top: 200px;
+            left: 200px;
+            z-index: 10;
+            width: 209px;
+            height: 73px;
+            background: url('/assets/images/tooltip__point-left.png') no-repeat;
+            color: #e5e6e7;
+            font-size: 25px;
+            padding: 18px;
+            padding-left: 28px;
+            text-align: center;
+            display: none;
+
+            div.storey
+            {
+                font-size: 16px;
+                line-height: 16px;
+            }
+
+            div.an
+            {
+                font-size: 22px;
+                line-height: 22px;
+            }
+
+            b
+            {
+                font-weight: normal;
+            }
+
+            &.open
+            {
+                display: block;
+            }
+        }
+
+        div.load__frame
+        {
+            &.load__section__3
+            {
+                &.section__1 {
+                    left: -100%;
+                }
+
+                &.section__2 {
+                    left: 100%;
+                }
+
+                &.section__3 {
+                    left: 0;
+                }
+            }
+
+            &.load__section__2
+            {
+                &.section__1 {
+                    left: 100%;
+                }
+
+                &.section__2 {
+                    left: 0%;
+                }
+
+                &.section__3 {
+                    left: -100%;
+                }
+            }
+
+            &.load__section__1
+            {
+                &.section__1 {
+                    left: 0%;
+                }
+
+                &.section__2 {
+                    left: 100%;
+                }
+
+                &.section__3 {
+                    left: 100%;
+                }
+            }
+        }
+
+        /*div.load__frame
+        {
+            &.section__1 {
+                left: -100%;
+            }
+
+            &.section__2 {
+                left: 0;
+            }
+
+            &.section__3 {
+                left: 100%;
+            }
+        }*/
+    }
+}
+
+
+div#apartments__storey__page2
+{
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.5);
+    display: table;
+
+    div.middle
+    {
+        display: table-cell;
+        vertical-align: middle;
+
+        div.window
+        {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            color: #E5E6E7;
+
+            div.left__section
+            {
+                width: 153px;
+                position: relative;
+                text-align: center;
+                padding-top: 100px;
+
+                div.section__name
+                {
+                    font-size: 34px;
+                    border-bottom: 3px solid #E5E6E7;
+                    padding-bottom: 5px;
+                    margin-bottom: 10px;
+                }
+
+                div.switch__section
+                {
+                    margin-top: 30px;
+
+                    svg
+                    {
+                        path
+                        {
+                            cursor: pointer;
+                        }
+                        path:hover
+                        {
+                            fill: #ffffff;
+                            color: #000000;
+                        }
+
+                        rect
+                        {
+                            cursor: pointer;
+                        }
+
+                        rect:hover
+                        {
+                            fill: #ffffff;
+                            color: #000000;
+                        }
+                    }
+                }
+
+                div.buttons__section
+                {
+                    margin-top: 70px;
+
+                    a
+                    {
+                        display: block;
+                        text-align: center;
+                        padding: 10px;
+                        border: 3px solid #E5E6E7;
+                        font-size: 17px;
+                        text-decoration: none;
+                        color: #E5E6E7;
+                        margin-bottom: 10px;
+                        .border-radius(5px);
+                        .transition(all, .2s, linear);
+
+                        &:hover
+                        {
+                            background-color: @color-green;
+                            border: 3px solid transparent;
+                            color: #000;
+                        }
+                    }
+                }
+
+                div.switch__storey
+                {
+                    //position: relative;
+                    //bottom: -50px;
+                    //left: -100px;
+                    position: relative;
+                    padding-top: 20px;
+
+                    ul
+                    {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        position: absolute;
+
+                        &.left
+                        {
+                            left: 30px;
+                        }
+
+                        &.right
+                        {
+                            right: 30px;
+                        }
+
+                        li
+                        {
+                            a
+                            {
+                                display: block;
+                                width: 30px;
+                                height: 30px;
+                                text-align: center;
+                                padding-top: 2px;
+                                border:2px solid #E5E6E7;
+                                color: #E5E6E7;
+                                text-decoration: none;
+                                font-size: 16px;
+                                position: relative;
+                                margin-bottom: 10px;
+                                .border-radius(50%);
+                                .transition(all, .2s, ease-in-out);
+
+                                span
+                                {
+                                    position: absolute;
+                                    left: -50px;
+                                    font-size: 15px;
+                                    display: none;
+                                    color: #E5E6E7;
+                                }
+
+                                &.active, &:hover
+                                {
+                                    background-color: @color-green;
+                                    border: 2px solid transparent;
+                                    color: #000;
+
+                                    span
+                                    {
+                                        display: inline-block;
+                                    }
+                                }
+                            }
+                        }
+
+                        &.right
+                        {
+                            li{
+                                a{
+                                    span{
+                                        right: -140px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            div.checked__section__listing
+            {
+                position: absolute;
+                text-align: center;
+                margin: 0 auto;
+                z-index: 100;
+                left: 0;
+                right: 0;
+                margin-left: auto;
+                margin-right: auto;
+                top: -110px;
+
+                div.list
+                {
+                    a
+                    {
+                        display: inline-block;
+                        width: 132px;
+                        height: 50px;
+                        background: url('/assets/img/arrows__blue/arrow.png') no-repeat;
+                        font-size: 18px;
+                        line-height: 18px;
+                        color: #fff;
+                        text-decoration: none;
+                        padding-top: 14px;
+                        cursor: none;
+
+                        &.link
+                        {
+                            background: url('/assets/img/arrows__blue/arrow__border.png') no-repeat;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            div.center__section
+            {
+                position: relative;
+                div.image__section
+                {
+                    height: 700px;
+                    text-align: center;
+                    position: relative;
+                    top: -40px;
+
+                    a.close
+                    {
+                        background: url('/assets/images/icon__close.svg') no-repeat;
+                        width: 43px;
+                        height: 45px;
+                        position: absolute;
+                        display: block;
+                        right: 0;
+                        top: 0;
+                        z-index: 20;
+                    }
+
+                    div.image
+                    {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                        //background-color: rgba(0, 0, 0, 0.4);
+                        padding: 15px;
+                        .border-radius(5px);
+                    }
+                }
+
+                div.rose__wind
+                {
+                    width: 119px;
+                    height: 121px;
+                    background: url('/assets/images/roze__wind.svg') no-repeat;
+                    position: absolute;
+                    right: 0;
+                    bottom: 150px;
+
+                    &.section1_2_3
+                    {
+                        transform: rotate(142deg) scale(1) skew(1deg) translate(0px);
+                        -webkit-transform: rotate(142deg) scale(1) skew(1deg) translate(0px);
+                        -moz-transform: rotate(142deg) scale(1) skew(1deg) translate(0px);
+                        -o-transform: rotate(142deg) scale(1) skew(1deg) translate(0px);
+                        -ms-transform: rotate(142deg) scale(1) skew(1deg) translate(0px);
+                    }
+
+                    &.section4_5
+                    {
+                        transform: rotate(42deg) scale(1) skew(1deg) translate(0px);
+                        -webkit-transform: rotate(42deg) scale(1) skew(1deg) translate(0px);
+                        -moz-transform: rotate(42deg) scale(1) skew(1deg) translate(0px);
+                        -o-transform: rotate(42deg) scale(1) skew(1deg) translate(0px);
+                        -ms-transform: rotate(42deg) scale(1) skew(1deg) translate(0px);
+                    }
+                }
+
+                div.apartment__info222
+                {
+                    width: 100%;
+                    margin: 0 auto;
+                    margin-top: 0px;
+                    .opacity(0);
+
+                    &.open
+                    {
+                        .opacity(1);
+                    }
+                }
+
+                div.apartments__footer__info
+                {
+                    width: 100%;
+                    .opacity(0);
+
+                    &.open
+                    {
+                        .opacity(1);
+                    }
+
+                    div.info__left
+                    {
+                        background: url('/assets/images/apartments__page/apartment__footer__info.png') no-repeat;
+                        width: 493px;
+                        height: 100px;
+
+                        div.value__section
+                        {
+                            position: absolute;
+                            text-align: center;
+
+                            &.area
+                            {
+                                left: 50px;
+                                top: 20px;
+                            }
+
+                            &.rooms
+                            {
+                                left: 195px;
+                                top: 20px;
+                            }
+
+                            &.price
+                            {
+                                left: 295px;
+                                top: 20px;
+                            }
+
+                            div.name
+                            {
+                                font-size: 15px;
+                                position: relative;
+
+                                span.area
+                                {
+                                    position: absolute;
+                                    font-size: 11px;
+                                }
+                            }
+
+                            div.value
+                            {
+                                font-size: 35px;
+                                line-height: 35px;
+                            }
+                        }
+                    }
+
+                    div.more__property
+                    {
+                        a
+                        {
+                            display: block;
+                            background: url('/assets/images/apartments__page/more__property--background.png') no-repeat;
+                            width: 323px;
+                            height: 100px;
+                            text-decoration: none;
+                            margin: 0 0 0 auto;
+                            text-align: center;
+                            color: #fff;
+                            font-size: 21px;
+                            padding-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//Конец страницы "выбрать квартиру" (секция с общим планом квартир).

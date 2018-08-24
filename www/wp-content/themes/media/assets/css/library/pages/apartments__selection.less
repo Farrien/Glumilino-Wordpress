@@ -1,0 +1,607 @@
+div#apartments__selection__page
+{
+    /**
+     * Формируем страницу подбора по параметрам.
+     */
+    div#apartment-selection
+    {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: table!important;
+
+        div.middle
+        {
+            vertical-align: middle;
+            display: table-cell;
+
+            div.dynamic-container
+            {
+                width: 1407px;
+                height: 612px;
+            }
+
+            div.background
+            {
+                background: url('/assets/images/apartments__selection/background.svg') no-repeat;
+                width: 1407px;
+                height: 612px;
+                margin: 0 auto;
+                padding-left: 120px;
+                padding-right: 120px;
+                padding-top: 30px;
+                position: relative;
+            }
+
+            h1
+            {
+                color: #fff;
+                text-align: center;
+                font-size: 20px;
+                line-height: 20px;
+                font-weight: normal;
+                text-transform: lowercase;
+                margin-bottom: 30px;
+            }
+
+            div.mini__title
+            {
+                font-size: 20px;
+                line-height: 20px;
+                color: #E5E6E7;
+                padding: 30px;
+            }
+
+            div.mini__title2
+            {
+                font-size: 30px;
+                line-height: 30px;
+                color: #E5E6E7;
+                padding: 30px;
+                padding-top: 20px;
+                text-align: center;
+            }
+
+            div#calc
+            {
+
+                //padding-left: 50px;
+                padding-left: 30px;
+                padding-right: 30px;
+
+                div.section__selected
+                {
+                    margin-bottom: 25px;
+
+                    div.values
+                    {
+                        a
+                        {
+                            display: inline-block;
+                            width: 40px;
+                            height: 40px;
+                            border: 2px solid #E4E5E6;
+                            .border-radius(50%);
+                            text-align: center;
+                            color: #E4E5E6;
+                            text-decoration: none;
+                            font-size: 16px;
+                            padding-top: 6px;
+                            font-weight: bold;
+                            .transition(all, .2s, linear);
+                            margin-right: 8px;
+
+                            &.active, &:hover
+                            {
+                                background: @color-green;
+                                border: 2px solid @color-green;
+                                color: #000;
+                            }
+                        }
+                    }
+
+                    div.title
+                    {
+                        color: #fff;
+                        text-align: left;
+                        font-size: 20px;
+                        text-transform:lowercase;
+                        padding-top: 5px;
+
+                        span.area
+                        {
+                            position: relative;
+                            b
+                            {
+                                position: absolute;
+                                top: -7px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+
+                //Формируем секцию.
+                div.section
+                {
+                    margin-bottom: 25px;
+
+                    div.title
+                    {
+                        color: #fff;
+                        text-align: left;
+                        font-size: 20px;
+                        text-transform: lowercase;
+                        padding-top: 5px;
+
+                        span.area
+                        {
+                            position: relative;
+                            b
+                            {
+                                position: absolute;
+                                top: -2px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    //Формируем секцию ползунка.
+                    div.range-slider-section
+                    {
+                        //Формируем свойства ползунка.
+                        /*position: relative; border-bottom: 1px solid #ccc; padding-left: 40px;
+                        padding-right: 40px; margin-right: 150px;
+                        width: 100%; margin: 30px auto 0;*/
+                        position: relative;
+                        width: 100%;
+
+                        //Формируем заголовк.
+                        div.title
+                        {
+                            color: #fff;
+                            text-align: center;
+                            font-size: 20px;
+                            padding-bottom: 30px;
+                            text-transform: uppercase;
+
+                            span.area
+                            {
+                                position: relative;
+                                b
+                                {
+                                    position: absolute;
+                                    top: -7px;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                        //Конец заголовка.
+
+                        //Формируем непосредственно саму секцию с ползунком.
+                        .slider-range
+                        {
+                            //Формируем свойства секции.
+                            width: 100%;
+                            position: absolute;
+                            height: 1px;
+                            background: #ccc;
+
+                            //Формируем левый ползунок.
+                            .ui-slider-handle
+                            {
+                                position: absolute;
+                                z-index: 2;
+                                width: 30px;
+                                height: 37px;
+                                cursor: pointer;
+                                background: url('/assets/images/apartments__selection/range__point.svg') no-repeat ;
+                                font-weight: bold;
+                                color: #1C94C4;
+                                outline: none;
+                                top: -45px;
+                                margin-left: -14px;
+                                color: #fff;
+                                line-height: 30px;
+                                text-align: center;
+                                font-size: 16px;
+
+                                margin-left: -10px;
+
+                            }
+
+                            //Формируем правый ползунок.
+                            .ui-slider-handle:last-child
+                            {
+
+                                //margin-left: 35px;
+                                margin-left: -20px;
+                            }
+
+                            //Формируем область заполнения. (Белая линия).
+                            .ui-slider-range
+                            {
+                                background: #ffffff; /* Old browsers */
+                                position: relative;
+                                border: 0;
+                                top: -1px;
+                                height: 3px;
+
+                                &:before
+                                {
+                                    width: 10px;
+                                    height: 10px;
+                                    background: #fff;
+                                    left: 0;
+                                    top: -4px;
+                                    content: "";
+                                    position: absolute;
+                                    .border-radius(50%);
+                                }
+
+                                &:after
+                                {
+                                    width: 10px;
+                                    height: 10px;
+                                    background: #fff;
+                                    right: 0;
+                                    top: -4px;
+                                    content: "";
+                                    position: absolute;
+                                    .border-radius(50%);
+                                }
+                            }
+                        }
+                        //Конец непосредственно самой секции с ползунком.
+                    }
+                    //Конец секции ползунка.
+                }
+                //Конец секции.
+
+                //Формируем блок с счетчиком кол-ва найденых квартир.
+                div.all
+                {
+                    //Формируем свойства блока.
+                    color: #fff;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    text-align: center;
+                    margin-top: 25px;
+
+                    //Оформляем цифру.
+                    b
+                    {
+                        color: #F9AF00;
+                        font-size: 32px;
+                        line-height: 32px;
+                        display: inline-block;
+                    }
+                }
+                //Конец блока с счетчиком.
+            }
+
+            div#end-resulting
+            {
+                //margin: 20px;
+                //padding: 20px;
+                background: none;
+                //.border-radius(10px);
+                position: relative;
+                padding-top: 60px;
+
+                div#waiting
+                {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    .border-radius(10px);
+                    display: none;
+                    .opacity(0);
+                    .transform(scale(1.2));
+                    //.transition(visibility, .2s, linear);
+                    //.transition(opacity, .2s, linear);
+
+                    &.open
+                    {
+                        display: block;
+                        //.opacity(1);
+                    }
+
+                    div.middle-x
+                    {
+                        text-align: center;
+                        padding-top:200px;
+                        color: #fff;
+                        //padding-right: 50px;
+
+                        .cssload-container {
+                            width: 100%;
+                            height: 49px;
+                            text-align: center;
+                        }
+
+                        .cssload-double-torus {
+                            width: 49px;
+                            height: 49px;
+                            margin: 0 auto;
+                            border: 4px double;
+                            border-radius: 50%;
+                            border-color: transparent rgba(230,25,90,0.9) rgba(230,25,90,0.9);
+                            animation: cssload-spin 450ms infinite linear;
+                            -o-animation: cssload-spin 450ms infinite linear;
+                            -ms-animation: cssload-spin 450ms infinite linear;
+                            -webkit-animation: cssload-spin 450ms infinite linear;
+                            -moz-animation: cssload-spin 450ms infinite linear;
+                        }
+
+
+
+                        @keyframes cssload-spin {
+                            100%{ transform: rotate(360deg); transform: rotate(360deg); }
+                        }
+
+                        @-o-keyframes cssload-spin {
+                            100%{ -o-transform: rotate(360deg); transform: rotate(360deg); }
+                        }
+
+                        @-ms-keyframes cssload-spin {
+                            100%{ -ms-transform: rotate(360deg); transform: rotate(360deg); }
+                        }
+
+                        @-webkit-keyframes cssload-spin {
+                            100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+                        }
+
+                        @-moz-keyframes cssload-spin {
+                            100%{ -moz-transform: rotate(360deg); transform: rotate(360deg); }
+                        }
+                    }
+                }
+
+                div.header
+                {
+                    font-size: 20px;
+                    padding-right: 10px;
+
+                    div.col
+                    {
+                        width: 16.6666666%;
+                        //width: 14.28571428%;
+                        //width: 20%;
+                        float: left;
+                        //border: 1px solid;
+                        color: #fff;
+                        text-align: center;
+                        text-transform: lowercase;
+
+                        span.area
+                        {
+                            position: relative;
+                            b
+                            {
+                                position: absolute;
+                                top: -0px;
+                                font-size: 9px;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                }
+
+                div.resulting
+                {
+                    font-size: 20px;
+                    height: 350px;
+                    overflow-y: auto;
+                    cursor: pointer;
+                    padding-top: 15px;
+                    padding-right: 15px;
+
+                    &::-webkit-scrollbar-track
+                    {
+                        background-color: none;
+                    }
+
+                    &::-webkit-scrollbar
+                    {
+                        width:3px;
+                        background-color: #E4E5E6;
+                    }
+
+                    &::-webkit-scrollbar-thumb
+                    {
+                        background-color: @color-green;
+                    }
+
+                    &::-moz-scrollbar
+                    {
+                        width: 10px;
+                        background-color: none;
+                    }
+
+                    &::-moz-scrollbar-track
+                    {
+                        background-color: none;
+                    }
+
+                    &::-moz-scrollbar-thumb
+                    {
+                        background-color: #24ab00;
+                    }
+
+                    div.r
+                    {
+                        .transition(all, .2s, linear);
+
+                        &:nth-child(odd)
+                        {
+                            background: rgba(0,0,0, 0.34);
+                        }
+
+                        div.hidden__plan__view
+                        {
+                            .transition(opacity, .2s, linear);
+                        }
+
+                        &:hover
+                        {
+                            background-color: #80D028;
+
+                            div.col
+                            {
+                                div.hidden__plan__view
+                                {
+                                    display: block;
+                                    .opacity(1);
+                                }
+                            }
+                        }
+
+                        div.col
+                        {
+                            width: 16.6666666%;
+                            width: 14.28571428%;
+                            width: 20%;
+                            float: left;
+                            color: #fff;
+                            text-align: center;
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+
+                            &:hover
+                             {
+
+                             }
+
+                            div.hidden__plan__view
+                            {
+                                position: absolute;
+                                padding: 15px;
+                                width: 350px;
+                                height: 400px;
+                                left: -390px;
+                                z-index: 2;
+                                top: 55px;
+                                background-color: #0C1323;
+                                display: none;
+                                .opacity(0);
+                                .transition(opacity, .2s, linear);
+
+                                div.apart-frame__centrer
+                                {
+                                    padding-top: 30px;
+                                    position: relative;
+                                    img
+                                    {
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            div#find-resulting
+            {
+                padding: 20px;
+
+                //Формируем таблицу с квартирами.
+                table
+                {
+                    //Формируем свойства таблицы.
+                    background: rgba(0, 0, 0, 0.3);
+                    text-align: center;
+                    width: 100%;
+                    .border-radius(20px);
+                    padding-bottom: 20px;
+
+                    //Формируем шапку таблицы.
+                    th
+                    {
+                        background: none;
+                        padding: 17px;
+                        position: relative;
+                        color: #fff;
+                        font-size: 14px;
+                    }
+
+                    //Через одну секцию ячеек таблицы делаем полупрозрачный пробел.
+                    tr:nth-child(even)
+                    {
+                        background: rgba(255,255,255, 0.1);
+                    }
+
+                    //Свойства ячейки таблицы.
+                    td
+                    {
+                        padding: 17px;
+                        position: relative;
+                        transition: all 0.5s ease;
+                        color: #fff;
+                        font-size: 17px;
+                    }
+
+                    //Свойства ячейки таблицы.
+                    tbody:hover tr:hover td
+                    {
+                        //background-color: #e00563;
+                    }
+
+                    //Свойства ячейки таблицы.
+                    tbody
+                    {
+                        display: block;
+                        overflow-y: auto;
+                        overflow-x: hidden;
+                        width: 100% !important;
+                    }
+
+                    //Оформляем scrollbar внутри таблицы.
+                    #apartment-find-sorting-container::-webkit-scrollbar-track
+                    {
+                        background-color: none;
+                    }
+
+                    //Оформляем scrollbar внутри таблицы.
+                    #apartment-find-sorting-container::-webkit-scrollbar
+                    {
+                        width: 5px;
+                        background-color: none;
+                    }
+
+                    //Оформляем scrollbar внутри таблицы.
+                    #apartment-find-sorting-container::-webkit-scrollbar-thumb
+                    {
+                        background-color: #DF0F55;
+                    }
+
+                    //Оформляем scrollbar внутри таблицы.
+                    #apartment-find-sorting-container::-moz-scrollbar
+                    {
+                        width: 5px;
+                        background-color: none;
+                    }
+
+                    //Оформляем scrollbar внутри таблицы.
+                    #apartment-find-sorting-container::-moz-scrollbar-track
+                    {
+                        background-color: none;
+                    }
+
+                    //Оформляем scrollbar внутри таблицы.
+                    #apartment-find-sorting-container::-moz-scrollbar-thumb
+                    {
+                        background-color: #DF0F55;
+                    }
+                }
+                //Конец таблицы с квартирами.
+            }
+        }
+    }
+    //Конец страницы подбора по параметрам.
+}

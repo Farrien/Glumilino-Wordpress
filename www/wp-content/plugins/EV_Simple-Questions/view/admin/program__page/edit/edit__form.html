@@ -1,0 +1,47 @@
+<div class="title__block">
+    Редактирование информации
+    <a href="[[$section__url]]" class="back">
+        Вернуться к списку разделов
+    </a>
+</div>
+
+<div class="hr-gray-left"></div>
+<!-- <div class="notif error">
+    Описательная информации
+</div> -->
+
+[[$error]]
+
+<div class="row clearfix">
+    <div class="col-xs-12">
+        <form action="[[$section__url]]&action=edit__block&id=[[$id]]&op=save" method="post" class="styling__form" enctype="multipart/form-data">
+            <input type="hidden" name="is__posting" value="true">
+            <table class="table-control" width="100%">
+                <thead>
+                <th width="300">
+
+                </th>
+                <th>
+                </th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Заголовок раздела:</td>
+                    <td><input type="text" name="block__title" value="[[$title]]" placeholder="Заголовок раздела"></td>
+                </tr>
+                <tr>
+                    <td>Описание (контент):</td>
+                    <td><textarea name="block__description" class="redactor__textarea">[[$description]]</textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">Сохранить</button>
+                        <a href="[[$section__url]]" class="submit">Назад</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>

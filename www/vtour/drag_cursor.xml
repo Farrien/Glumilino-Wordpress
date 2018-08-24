@@ -1,0 +1,13 @@
+<krpano>
+	<events onxmlcomplete="action(dragcursor);" />
+	<action name="dragcursor">
+		set(control.mousetype, drag2dsmooth);
+		set(control.touchtype, drag2dsmooth);
+		set(cursors.url,  /assets/pages/pano/drag-cursors.png);
+		set(cursors.type, drag);
+		set(cursors.move,  0|0|32|32);
+		set(cursors.drag, 32|0|32|32);
+	</action>
+	<events onloadcomplete="js(pano_loaded());" />
+	<!--<events onviewchange="js(pano_rotated());" />-->
+</krpano>

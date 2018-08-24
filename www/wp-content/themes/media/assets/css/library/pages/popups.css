@@ -1,0 +1,20 @@
+div#send__plan {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.5);
+  display: table;
+}
+div#send__plan div.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+div#send__plan div.middle div.window {
+  width: 679px;
+  height: 345px;
+  background: url('/assets/images/popups/send__plan__background.svg') no-repeat;
+  margin: 0 auto;
+}

@@ -1,0 +1,200 @@
+/**
+ *
+ */
+div#mortgage__page
+{
+    display: table;
+
+    div.middle
+    {
+        display: table-cell;
+        vertical-align: middle;
+
+        a.apartment__selection {
+            background: url('/assets/images/apartments__page/apartment__selection.svg') no-repeat;
+            width: 229px;
+            height: 96px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+
+        div.dynamic__container
+        {
+            width: 1270px;
+            height: 583px;
+        }
+
+        div.window
+        {
+            width: 1270px;
+            height: 583px;
+            background: url('/assets/images/mortgage__page/background.svg') no-repeat;
+            margin: 0 auto;
+            padding-top: 50px;
+
+            div.scroll__container
+            {
+                padding:0px;
+                height: 480px;
+                //border: 1px solid;
+                overflow-y: scroll;
+
+                &::-webkit-scrollbar-track
+                {
+                    background-color: none;
+                }
+
+                &::-webkit-scrollbar
+                {
+                    width:3px;
+                    background-color: #E4E5E6;
+                }
+
+                &::-webkit-scrollbar-thumb
+                {
+                    background-color: @color-green;
+                }
+
+                &::-moz-scrollbar
+                {
+                    width: 10px;
+                    background-color: none;
+                }
+
+                &::-moz-scrollbar-track
+                {
+                    background-color: none;
+                }
+
+                &::-moz-scrollbar-thumb
+                {
+                    background-color: #24ab00;
+                }
+
+                div.svg__title
+                {
+                    margin: 0 auto;
+                    text-align: center;
+                }
+
+                div.mini__title
+                {
+                    color: #E3E3E3;
+                    font-size: 20px;
+                    text-align: center;
+                }
+
+                div.large__title
+                {
+                    font-size: 38px;
+                    color: #E3E3E3;
+                    text-align: center;
+                }
+
+                div.switch__section
+                {
+                    margin-top: 20px;
+                    padding-bottom: 20px;
+                    width: 70%;
+                    margin: 0 auto;
+                    margin-top: 15px;
+                    a
+                    {
+                        display: block;
+                        text-align: center;
+                        font-size: 22px;
+                        line-height: 22px;
+                        color: #80c328;
+                        border: 2px solid #80c328;
+                        text-decoration: none;
+                        padding: 10px;
+                        .transition(background, .2s, linear);
+
+                        &.active, &:hover
+                        {
+                            background: #80c328;
+                            color: #000;
+                        }
+                    }
+                }
+
+                div.content
+                {
+                    font-size: 18px;
+                    line-height: 25px;
+                    width: 970px;
+                    margin: 0 auto;
+                    margin-top: 20px;
+
+                    color: #E3E3E3;
+                    display: none;
+                    .opacity(0);
+                    .transition(opacity, .2s, linear);
+                    position: relative;
+                    left: -100px;
+
+                    &.open
+                    {
+                        display: block;
+                        //.opacity(1);
+                    }
+
+                    table
+                    {
+                        color: #fff;
+                        font-weight: normal;
+                        font-size: 20px;
+                        line-height: 20px;
+
+                        th
+                        {
+                            text-align: center;
+                            padding-bottom: 20px;
+                            font-weight: normal;
+                        }
+
+                        tbody
+                        {
+                            tr
+                            {
+                                &:nth-child(odd)
+                                {
+                                    background: rgba(0,0,0, 0.34);
+                                }
+                            }
+
+                            td
+                            {
+                                padding: 10px;
+                                text-align: center;
+                            }
+                        }
+                    }
+
+                    div.logo__banks
+                    {
+                        margin: 0 auto;
+                        margin-top: 30px;
+                        text-align: center;
+                        width: 420px;
+                        .clearfix();
+
+                        a
+                        {
+                            display: block;
+                            float: left;
+                            margin-right: 13px;
+
+                            &:last-child
+                            {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/**/
